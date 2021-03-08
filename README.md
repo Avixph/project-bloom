@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# <div align="left">![bloom banner](src/images/design_elements/project-bloom-banner.svg) </div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### `“Helping you blossom into your next career”`
 
-## Available Scripts
+## <div align="left" style='color: #240046'> 🔎 Description 🔍
 
-In the project directory, you can run:
+<p>The economic toll of the COVID-19 pandemic is expected to leave more than 140 million people out of work and another 1.6 billion at risk of income loss -- with low-income workers, women and underrepresented communities the hardest hit.</p>
+<p>Our job searching application will be an easy platform for tech professionals that have been laid off or looking for new growth opportunities in other companies to search for roles according to specific technologies and roles within tech. The goal is to make the job searching process more streamlined and time efficient for tech workers. We will help decrease the amount of time it takes to find relevant roles for the technologies or skills one is proficient in so that they don’t have to sift through roles that don't apply to them. Other features include: two search bars and 5 roles in the vicinity of the job seeker.
+</p>
 
-### `yarn start`
+## <div align="left" style='color: #240046'> 🛠 Wireframing 🛠 </div>
+[App Concepts](https://www.figma.com/file/ag4FxZ6ylZVhcD11s4rNpN/Project-Bloom?node-id=17%3A202)
+| Logo                                                         |                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------ |
+| ![bloom Icon](src/images/logos/project-bloom-logo-small.svg) | ![bloom Logo](src/images/logos/project-bloom-logo.svg) |
+| icon                                                         | logo                                                   |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+| Fonts                                                              |
+| ------------------------------------------------------------------ |
+| ![bloom Fonts](src/images/design_elements/project-bloom-fonts.svg) |
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+| Mockups                                                                            |                                                                                  |                                                                                         |
+| ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| ![bloom Desktop](src/images/Wireframing_and_maping/project-bloom-desktop-view.svg) | ![bloom Tablet](src/images/Wireframing_and_maping/project-bloom-tablet-view.svg) | ![bloom mobile](src/images/Wireframing_and_maping/project-bloom-native-mobile-view.svg) |
+| Desktop                                                                            | Tablet                                                                           | Mobile                                                                                  |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## <div align="left" style='color: #240046'> 🖇 Component Hierarchy 🖇  </div>
+[App Component Hierarchy](https://whimsical.com/project-bloom-Eypnmjf9Diz6WejykobjSM@2Ux7TurymMwgkHyMFSAA)
 
-### `yarn build`
+| ![bloom Component Hierarchy](src/images/Wireframing_and_maping/project-bloom-component-map.png) |
+| ----------------------------------------------------------------------------------------------- |
+| component hierarchy                                                                             |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## <div align="left" style='color: #240046'> 🗄 API 🗄 </div>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| API                                                                                       | Description                                                                  |
+| ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| [![GitHub Jobs logo](src/images/logos/github-jobs-logo.png)](https://jobs.github.com/api) | The GitHub Jobs API allows you to search, and view jobs with JSON over HTTP. |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## <div align="left" style='color: #240046'> 🏆 MVP 🏆</div>
+> - Search Bar
+> - Locations near me
+> - Light/Dark Mode
 
-### `yarn eject`
+## <div align="left" style='color: #240046'> 🔮 Post-MVP 🔮 </div>
+> - Saving Jobs to Favorite Local Storage (heart or star)
+> - Advanced search using another job API, includes internships,apprenticeships, externships etc
+> - Job recommendations based on a technology you know 
+> - Virtual hiring Events tab
+> - Blog with relevant job prep articles
+> - Diversity focus to match diverse candidates in tech roles
+> - Search bar autocomplete to save time when looking for roles
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## <div align="left" style='color: #b0371c'> 📠 Contact 📠</div>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Angel B.Fernandez                                                                                                                                                                 | David Espinal                                                                                                                                                                    | Quiana C. Berry                                                                                                                                                                      |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [![LinkedIn](src/images/logos/linkedin-logo.svg)](https://www.linkedin.com/in/angelbienvenidofernandez/) [![GitHub](src/images/logos/github-logo.svg)](https://github.com/Avixph) | [![LinkedIn](src/images/logos/linkedin-logo.svg)](https://www.linkedin.com/in/david-espinal-28b91a1b7/) [![GitHub](src/images/logos/github-logo.svg)](https://github.com/DEsp04) | [![LinkedIn](src/images/logos/linkedin-logo.svg)](https://www.linkedin.com/in/quiana-c-berry-b727a7143/) [![GitHub](src/images/logos/github-logo.svg)](https://github.com/berryq460) |
+|                                                                                                                                                                                   |                                                                                                                                                                                  |                                                                                                                                                                                      |
