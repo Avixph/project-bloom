@@ -1,1 +1,1 @@
-export const MET_URL = `https://jobs.github.com/positions.json?`;
+export const GitHubJobs_URL = `https://jobs.github.com/positions.json?`;
