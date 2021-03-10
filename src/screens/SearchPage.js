@@ -1,3 +1,15 @@
+import SearchField from "../components/SearchField";
+import SearchJobList from "../components/SearchJobList";
+
+
+
+
+
 export default function SearchPage() {
-  return;
+  return (
+    <div>
+      <SearchField />
+      <SearchJobList />
+    </div>
+  );
 }
