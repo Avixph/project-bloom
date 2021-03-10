@@ -13,10 +13,14 @@ export default function Header() {
             </NavLink>
           </li>
           <li>
-            <NavLink to={"/searchJobs"}>Search Jobs</NavLink>
+            <NavLink exact to={"/search"}>
+              Search Jobs
+            </NavLink>
           </li>
           <li>
-            <NavLink to={"/about"}>About</NavLink>
+            <NavLink exact to={"/about"}>
+              About
+            </NavLink>
           </li>
         </ul>
       </nav>
