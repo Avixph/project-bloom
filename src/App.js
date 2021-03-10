@@ -1,11 +1,10 @@
 import "./App.css";
-import Header from "./components/Header";
+import { Route, Switch } from "react-router-dom";
 import LandingPage from "./screens/LandingPage";
 import HomePage from "./screens/HomePage";
 import SearchPage from "./screens/SearchPage";
 import AboutPage from "./screens/AboutPage";
 import JobDescription from "./screens/JobDescription";
-import Footer from "./components/Footer";
 
 import { Switch, Route } from 'react-router-dom';
 
@@ -13,40 +12,37 @@ import { Switch, Route } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <Header />
       <main>
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route
             exact
             path="/home"
-            component={HomePage(({ match }) => (
-              <div>
-                <Route
-                  exact
-                  path={match.url + "/jobDescription"}
-                  component={JobDescription}
-                />
-              </div>
-            ))}
+            // component={HomePage(({ match }) => (
+            //   <Route
+            //     exact
+            //     path={match.url + "/jobDescription"}
+            //     component={JobDescription}
+            //   />
+            // ))}
+            component={HomePage}
           />
           <Route
             exact
             path="/search"
-            component={SearchPage(({ match }) => (
-              <div>
-                <Route
-                  exact
-                  path={match.url + "/jobDescription"}
-                  component={JobDescription}
-                />
-              </div>
-            ))}
+            // component={SearchPage(({ match }) => (
+            //   <Route
+            //     exact
+            //     path={match.url + "/jobDescription"}
+            //     component={JobDescription}
+            //   />
+            // ))}
+            component={SearchPage}
           />
           <Route exact path="/about" component={AboutPage} />
+          <Route exact path="/jobDescription" component={JobDescription} />
         </Switch>
       </main>
-      <Footer />
     </div>
   );
 }
