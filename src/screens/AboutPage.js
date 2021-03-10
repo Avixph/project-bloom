@@ -1,3 +1,8 @@
 export default function AboutPage() {
-  return;
+  
+  
+  
+  return (
+    <div></div>
+  );
 }
