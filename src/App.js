@@ -6,6 +6,9 @@ import SearchPage from "./screens/SearchPage";
 import AboutPage from "./screens/AboutPage";
 import JobDescription from "./screens/JobDescription";
 
+import { Switch, Route } from 'react-router-dom';
+
+
 function App() {
   return (
     <div className="App">

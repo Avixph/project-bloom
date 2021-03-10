@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import LightsOut from "../components/LightsOut";
 
 export default function JobDescription() {
+
   return (
     <div className="jobDescription">
       <Header />
@@ -10,4 +11,5 @@ export default function JobDescription() {
       <Footer />
     </div>
   );
+
 }
