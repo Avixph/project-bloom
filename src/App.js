@@ -7,6 +7,9 @@ import AboutPage from "./screens/AboutPage";
 import JobDescription from "./screens/JobDescription";
 import Footer from "./components/Footer";
 
+import { Switch, Route } from 'react-router-dom';
+
+
 function App() {
   return (
     <div className="App">

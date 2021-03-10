@@ -1,3 +1,11 @@
+
+
+
+
+
 export default function LandingPage() {
-  return;
+  
+  return (
+    <div></div>
+  );
 }
