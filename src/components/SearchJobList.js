@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react';
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import InfiniteScroll from 'react-infinite-scroll-component';
@@ -40,5 +39,6 @@ export default function SearchJobList() {
       </InfiniteScroll>
     </div>        
   );
+
 
 }
