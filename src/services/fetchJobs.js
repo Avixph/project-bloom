@@ -28,18 +28,17 @@ Typing up some notes here while you're busy:
    //boolean for full time part time
    //
 
+// navigator.geolocation.getCurrentPosition(givenLocation, error);
 
-navigator.geolocation.getCurrentPosition(givenLocation, error);
+// navigator.permissions.query({ name: "geolocation" })
 
-navigator.permissions.query({ name: "geolocation" })
+// export async function fetchLocalJobs(position) {
+//   console.log(objectIDs);
+//   const localJobAPI = `${REMOTIVE_URL}lat=${latitude}&long=${longitude}`;
 
-export async function fetchLocalJobs(position) {
-  console.log(objectIDs);
-  const localJobAPI = `${REMOTIVE_URL}lat=${latitude}&long=${longitude}`;
-
-  const jobInfo = await axios.get(localJobAPI).then(({ data }) => {
-    return data;
-  });
-  console.log(jobInfo);
-  return jobInfo;
-}
+//   const jobInfo = await axios.get(localJobAPI).then(({ data }) => {
+//     return data;
+//   });
+//   console.log(jobInfo);
+//   return jobInfo;
+// }
