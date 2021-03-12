@@ -31,7 +31,7 @@ export default function SearchField() {
     setSearch(e.target.value)
   }
 
-  console.log(search);
+  // console.log(search);
 
 
   
@@ -46,7 +46,7 @@ export default function SearchField() {
         />
         {/* button is your action */}
         <button
-        onClick={() => dispatch(fetchSearch({limit: 10, name: search}))}
+        onClick={() => dispatch(fetchSearch({limit: 5, name: search}))}
         >
           Search
         </button>

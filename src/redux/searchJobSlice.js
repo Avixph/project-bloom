@@ -6,7 +6,6 @@ import axios from "axios";
 export const fetchSearch = createAsyncThunk(
   "jobSearches/fetchSearch",
   async (obj) => {
-    // return fetch('https://remotive.io/api/remote-jobs?category=software-dev&limit=25').then(res => res.json())
     
     console.log(obj)
   
@@ -17,12 +16,7 @@ export const fetchSearch = createAsyncThunk(
 )
 
 
-
-
-
-
 const searchSlice = createSlice({
-  
 
   name: "jobSearches",
   initialState: {
