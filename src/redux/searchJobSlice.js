@@ -26,7 +26,7 @@ const searchSlice = createSlice({
 
   name: "jobSearches",
   initialState: {
-    jobs: [],
+    jobs: undefined,
     status: null,
   },
 
