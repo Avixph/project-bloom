@@ -6,6 +6,7 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 
 //Post info goes here
 export default function SearchJobList() {
+
   
   const [page, setPage] = useState(1)
   const jobsRequest = useSelector((state) => state.searches.jobs);
@@ -39,4 +40,5 @@ export default function SearchJobList() {
       </InfiniteScroll>
     </div>        
   );
+
 }
