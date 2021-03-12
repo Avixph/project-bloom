@@ -14,6 +14,7 @@ export default function JobDescription() {
   useEffect(async () => {
     setJobsArray(await fetchJobs("software-dev", 25));
   }, []);
+  
   console.log(jobsArray)
      
   return (

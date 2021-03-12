@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 //(Below)import Thunk
 import { fetchSearch } from "../redux/searchJobSlice"
-
+import fetchJobPosts from "../services/fetchJobPosts"
 
 
 
@@ -14,9 +14,9 @@ export default function SearchField() {
 
   const dispatch = useDispatch();
   
-  useEffect(() => {
-    dispatch(fetchSearch())
-  }, [])
+  // useEffect(() => {
+  //   dispatch(fetchSearch({limit: 2, field: search}))
+  // }, [])
 
 
   console.log(jobsRequest);
@@ -34,21 +34,28 @@ export default function SearchField() {
 
   console.log(search);
 
+
+  
+
+
+
+
   return (
     <div>
-      <form>
+      {/* <form> */}
         <input
           type="Search"
           placeholder="Search"
-          // value={term} ---might use a react hook
+          value={search}
           onChange = {handleSearchInput}
         />
+        {/* button is your action */}
         <button
-          // onClick={}
+        onClick={() => dispatch(fetchSearch({limit: 10, name: search}))}
         >
           Search
         </button>
-      </form>
+      {/* </form> */}
     </div>
   );
 }
