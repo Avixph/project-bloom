@@ -1,26 +1,31 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+
+import { fetchJobsSearch } from "../services/fetchJobs";
+import axios from "axios";
+
 import { fetchJobSearch } from "../services/fetchJobs";
 
 export const fetchSearch = createAsyncThunk(
   "jobSearches/fetchSearch",
-  async () => {
-    // return fetch(
-    //   "https://remotive.io/api/remote-jobs?category=software-dev"
-    // ).then((res) => res.json());
-
-    // const { data } = await axios.get(
-    //   "https://remotive.io/api/remote-jobs?category=software-dev&limit=25"
-    // );
-    // return data.jobs;
-
-    fetchJobSearch();
+  async (obj) => {
+    
+    console.log(obj)
+  
+    const { data } = await axios.get(`https://remotive.io/api/remote-jobs?search=${obj.name}&limit=${obj.limit}`)
+    //limit not working
+    return data;
+    
+    // fetchJobSearch();
   }
-);
+)
+
 
 const searchSlice = createSlice({
+
   name: "jobSearches",
   initialState: {
-    searchJobs: [],
+    searchJobs: undefined,
+
     status: null,
   },
 
