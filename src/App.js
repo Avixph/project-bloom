@@ -38,6 +38,7 @@ function App() {
           />
           <Route exact path="/about" component={AboutPage} />
           <Route exact path="/jobDescription" component={JobDescription} />
+          {/* <Route exact path="/fetchJobs" component={JobSearch} /> */}
         </Switch>
       </main>
     </div>
@@ -45,3 +46,4 @@ function App() {
 }
 
 export default App;
+

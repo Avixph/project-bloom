@@ -1,3 +1,1 @@
-//this is where URLS go
-export const gitHubJobs_URL = `https://jobs.github.com/positions.json?`;
-// export const GitHubJobs_Search = https://jobs.github.com/positions.json?search=node
+ export const REMOTIVE_URL = "https://remotive.io/api/remote-jobs";
