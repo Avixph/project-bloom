@@ -3,7 +3,6 @@ import Footer from "../components/Footer";
 import LightsOut from "../components/LightsOut";
 
 export default function AboutPage() {
-
   return (
     <div className="about">
       <Header />

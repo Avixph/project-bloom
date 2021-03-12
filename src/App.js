@@ -5,9 +5,6 @@ import HomePage from "./screens/HomePage";
 import SearchPage from "./screens/SearchPage";
 import AboutPage from "./screens/AboutPage";
 import JobDescription from "./screens/JobDescription";
-
-
-
 function App() {
   return (
     <div className="App">
@@ -40,10 +37,10 @@ function App() {
           />
           <Route exact path="/about" component={AboutPage} />
           <Route exact path="/jobDescription" component={JobDescription} />
+          {/* <Route exact path="/fetchJobs" component={JobSearch} /> */}
         </Switch>
       </main>
     </div>
   );
 }
-
 export default App;

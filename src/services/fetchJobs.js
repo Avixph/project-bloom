@@ -1,17 +1,12 @@
-import { gitHubJobs_URL } from "./constants";
-import axios from "axios"
+import { REMOTIVE_URL } from "./constants.js";
+import axios from "axios";
 
 
 
 
-export async function fetchJobsSearch() {
- 
 
-  const searchApi = `${gitHubJobs_URL}description=python&full_time=true`;
-
-  const jobInfo = await axios.get(searchApi).then(({ data }) => {
-    return data;
-  });
-
-  return jobInfo;
+async function fetchJobs(category, limit) {
+  const response = await axios.get(`${REMOTIVE_URL}?category=${ category }&limit=${ limit }`);
+  return response.data.jobs;
 }
+export default fetchJobs;

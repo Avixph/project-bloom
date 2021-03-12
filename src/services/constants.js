@@ -1,8 +1,1 @@
-
-
-
-
-
-
-export const gitHubJobs_URL = `https://jobs.github.com/positions.json?`;
-
+export const REMOTIVE_URL = "https://remotive.io/api/remote-jobs";

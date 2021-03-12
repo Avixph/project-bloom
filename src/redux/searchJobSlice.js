@@ -6,7 +6,7 @@ import { fetchJobsSearch } from "../services/fetchJobs";
 export const fetchSearch = createAsyncThunk(
   "jobSearches/fetchSearch",
   async () => {
-    return fetch('https://pokeapi.co/api/v2/ability/110/').then(res => res.json())
+    return fetch('https://remotive.io/api/remote-jobs?category=software-dev').then(res => res.json())
   }
 )
 
