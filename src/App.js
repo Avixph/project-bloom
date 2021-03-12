@@ -5,7 +5,6 @@ import HomePage from "./screens/HomePage";
 import SearchPage from "./screens/SearchPage";
 import AboutPage from "./screens/AboutPage";
 import JobDescription from "./screens/JobDescription";
-
 function App() {
   return (
     <div className="App">
@@ -44,6 +43,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
-
