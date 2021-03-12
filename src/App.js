@@ -4,7 +4,7 @@ import LandingPage from "./screens/LandingPage";
 import HomePage from "./screens/HomePage";
 import SearchPage from "./screens/SearchPage";
 import AboutPage from "./screens/AboutPage";
-import JobDescription from "./screens/JobDescription";
+import FullJobDescription from "./screens/FullJobDescription";
 function App() {
   return (
     <div className="App">
@@ -36,7 +36,7 @@ function App() {
             component={SearchPage}
           />
           <Route exact path="/about" component={AboutPage} />
-          <Route exact path="/jobDescription" component={JobDescription} />
+          <Route exact path="/jobDescription" component={FullJobDescription} />
           {/* <Route exact path="/fetchJobs" component={JobSearch} /> */}
         </Switch>
       </main>
