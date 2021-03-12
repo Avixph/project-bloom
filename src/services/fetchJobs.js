@@ -33,7 +33,7 @@ export async function fetchJobCategory(category, limit) {
 }
 
 export async function fetchJobSearch() {
-  const searchAPI = `${REMOTIVE_URL}category=software-dev&limit=25`;
+  const searchAPI = `${REMOTIVE_URL}search=front%20end&limit=25`;
 
   const results = await axios.get(searchAPI).then(({ data }) => {
     return data.jobs;
@@ -44,7 +44,7 @@ export async function fetchJobSearch() {
 
 
 // export async function fetchJobSearch(query) {
-//   const searchAPI = `${REMOTIVE_URL}category=${query}`;
+//   const searchAPI = `${REMOTIVE_URL}search=${query}&limit=${limit}`;
 
 //   const results = await axios.get(searchAPI).then(({ data }) => {
 //     return data.jobs;
