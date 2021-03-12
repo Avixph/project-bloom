@@ -1,35 +1,25 @@
 // searching input + button
-import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 //(Below)import Thunk
-import { fetchSearch } from "../redux/searchJobSlice"
-
-
-
+import { fetchSearch } from "../redux/searchJobSlice";
 
 export default function SearchField() {
-
-
-  const jobsRequest = useSelector((state) => state.searches.jobs);
+  const jobRequest = useSelector((state) => state.searches.searchJobs);
 
   const dispatch = useDispatch();
-  
+
   useEffect(() => {
-    dispatch(fetchSearch())
-  }, [])
+    dispatch(fetchSearch());
+  }, []);
 
-
-  console.log(jobsRequest);
-
-
+  console.log(jobRequest);
 
   const [search, setSearch] = useState("");
 
-  
-
   function handleSearchInput(e) {
     e.preventDefault();
-    setSearch(e.target.value)
+    setSearch(e.target.value);
   }
 
   console.log(search);
@@ -41,10 +31,10 @@ export default function SearchField() {
           type="Search"
           placeholder="Search"
           // value={term} ---might use a react hook
-          onChange = {handleSearchInput}
+          onChange={handleSearchInput}
         />
         <button
-          // onClick={}
+        // onClick={}
         >
           Search
         </button>

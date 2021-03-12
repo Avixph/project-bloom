@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import LightsOut from "../components/LightsOut";
-import fetchJobs from "../services/fetchJobs";
+import { fetchJobCategory } from "../services/fetchJobs";
 import { useState, useEffect } from "react";
 
 //is this the file to put the fetched data? 
@@ -12,7 +12,7 @@ import { useState, useEffect } from "react";
 export default function JobDescription() {
   const [jobsArray, setJobsArray]= useState([])
   useEffect(async () => {
-    setJobsArray(await fetchJobs("software-dev", 25));
+    setJobsArray(await fetchJobCategory("software-dev", 25));
   }, []);
   console.log(jobsArray)
      

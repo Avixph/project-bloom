@@ -34,9 +34,9 @@
 
 ## <div align="left" style='color: #240046'> 🗄 API 🗄 </div>
 
-| API                                                                                       | Description                                                                  |
-| ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| [![GitHub Jobs logo](src/images/logos/github-jobs-logo.png)](https://jobs.github.com/api) | The GitHub Jobs API allows you to search, and view jobs with JSON over HTTP. |
+| API                                                                                                           | Description                                                                                     |
+| ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| [![Remotive Job API logo](src/images/logos/remotive-job-api-logo.svg)](https://remotive.io/api-documentation) | The Remotive Job API allows you to retrieve jobs based on category, company name, and searches. |
 
 ## <div align="left" style='color: #240046'> 🏆 MVP 🏆</div>
 > - Search Bar
