@@ -4,7 +4,8 @@ import { fetchJobCollection } from "../services/fetchJobs";
 export const fetchRandom = createAsyncThunk(
   "jobAtRandom/fetchRandom",
   async () => {
-    fetchJobCollection();
+    const data = await fetchJobCollection();
+    return data;
   }
 );
 
@@ -14,7 +15,7 @@ const randomSlice = createSlice({
     randomJobs: [],
     status: null,
   },
-  randomReducers: {
+  extraReducers: {
     [fetchRandom.pending]: (state, action) => {
       state.status = "loading jobs...";
     },
