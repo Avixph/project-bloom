@@ -6,6 +6,7 @@ import { fetchRandom } from "../redux/randomJobSlice";
 import RandomJobPost from "./RandomJobPost";
 
 export default function RandomJobList() {
+  // const [arr, setArr] = useState([])
   const [page, setPage] = useState(1);
   const RandomJobRequest = useSelector((state) => {
     return state.randoms.randomJobs;
@@ -26,12 +27,12 @@ export default function RandomJobList() {
         className="scrollableDiv3"
         style={{
           height: 600,
-          width: "99%",
+
           overflow: "auto",
           // display: "flex",
-          flexDirection: "column-reverse",
-          flexWrap: "wrap",
-          justifyContent: "flex-start",
+          // flexDirection: "column-reverse",
+          // flexWrap: "wrap",
+          // justifyContent: "flex-start",
         }}
       >
         <h1>Developer Jobs to Consider...</h1>

@@ -5,7 +5,15 @@ export const fetchRandom = createAsyncThunk(
   "jobAtRandom/fetchRandom",
   async () => {
     const data = await fetchJobCollection();
-    return data;
+    console.log(`There are ${data.length} jobs!`);
+    // return data;
+    const randomIndex = Math.floor(Math.random() * data.length);
+    const randomData = [];
+    for (let i = 0; i < 20; i++) {
+      randomData.push(data[randomIndex]);
+    }
+    console.log(`There are ${randomData.length} jobs!`);
+    return randomData;
   }
 );
 

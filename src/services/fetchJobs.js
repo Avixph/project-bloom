@@ -2,7 +2,7 @@ import { REMOTIVE_URL } from "./constants.js";
 import axios from "axios";
 
 export async function fetchJobCollection() {
-  const collectionAPI = `${REMOTIVE_URL}&limit=50`;
+  const collectionAPI = `${REMOTIVE_URL}`;
 
   const results = await axios.get(collectionAPI).then(({ data }) => {
     return data.jobs;
