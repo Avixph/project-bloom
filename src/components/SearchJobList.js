@@ -6,26 +6,25 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 //Post info goes here
 export default function SearchJobList() {
 
-  
-  const [page, setPage] = useState(1)
+  const [page, setPage] = useState(1);
   const jobsRequest = useSelector((state) => state.searches.jobs);
-
   
   if (!jobsRequest) { 
     return null
   }
 
-  console.log(jobsRequest.jobs.length)
-
   function renderList() {
-    return jobsRequest.jobs.map((post, index) => { 
+    const jobItems = jobsRequest.jobs.map((post, index) => {
       return (
-        <ul>
-           <li key={index}>{post.company_name}</li>
-        </ul>
+        <li key={index}>{post.company_name}</li>
       )
-    })
+    });
+    return (
+      <ul>{ jobItems }</ul>
+    )
   }
+  
+  console.log(jobsRequest.jobs.length)
   
   return (
     <div className="scrollableDiv">
@@ -39,6 +38,5 @@ export default function SearchJobList() {
       </InfiniteScroll>
     </div>        
   );
-
-
 }
+
