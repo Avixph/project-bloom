@@ -5,16 +5,17 @@ import { fetchJobSearch } from "../services/fetchJobs";
 
 export const fetchSearch = createAsyncThunk(
   "jobSearches/fetchSearch",
-  async (obj, thunkAPI) => {
+  async (obj) => {
     console.log(obj);
     // const { data } = await axios.get(
     //   `https://remotive.io/api/remote-jobs?search=${obj.feild}&limit=${obj.limit}`
     // );
     // //limit not working
 
-    // return data;
+    // return data.jobs;
 
-    fetchJobSearch(obj);
+    const data = fetchJobSearch({...obj});
+    return data;
   }
 );
 

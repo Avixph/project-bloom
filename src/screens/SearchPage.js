@@ -7,7 +7,6 @@ export default function SearchPage() {
   return (
     <div className="search">
       <Header />
-      <h2>Search for Jobs</h2>
       <SearchField />
       <SearchJobList />
       <Footer />

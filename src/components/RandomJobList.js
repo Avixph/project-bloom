@@ -23,14 +23,18 @@ export default function RandomJobList() {
     dispatch(fetchRandom());
   };
 
+  const renderRandomList = () => {
+    return RandomJobRequest.map((jobInfo, index) => {
+      return <RandomJobPost {...jobInfo} key={index} />;
+    });
+  };
+
   return (
     <div className="randomList">
       <h1>Developer Jobs to Consider</h1>
       <button onClick={handleReload}>Reload</button>
       <br />
-      {RandomJobRequest.map((jobInfo, index) => {
-        return <RandomJobPost {...jobInfo} key={index} />;
-      })}
+      <section>{renderRandomList()}</section>;
     </div>
   );
 }

@@ -11,20 +11,6 @@ export async function fetchJobCollection() {
   return results;
 }
 
-// export async function fetchJobCollection() {
-//   const collectionAPI = `${REMOTIVE_URL}`;
-
-//   const results = await axios.get(collectionAPI).then(({ data }) => {
-//     return data;
-//   });
-//   const randomResults = {
-//     ...results,
-//     jobs: results.jobs.slice(0, 100),
-//   };
-//   console.log(randomResults);
-//   return randomResults;
-// }
-
 export async function fetchJobCategory(category, limit) {
   const categoryAPI = await axios.get(
     `${REMOTIVE_URL}category=${category}&limit=${limit}`

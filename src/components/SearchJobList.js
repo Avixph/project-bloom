@@ -11,10 +11,10 @@ export default function SearchJobList() {
     return null;
   }
 
-  console.log(jobsRequest.jobs.length);
+  console.log(`There are ${jobsRequest.length} jobs!`);
 
   function renderList() {
-    return jobsRequest.jobs.map((post, index) => {
+    return jobsRequest.map((post, index) => {
       return (
         <ul>
           <li key={index}>{post.company_name}</li>
@@ -25,7 +25,7 @@ export default function SearchJobList() {
   return (
     <div className="scrollableDiv">
       <InfiniteScroll
-        dataLength={jobsRequest.jobs.length}
+        dataLength={jobsRequest.length}
         next={() => setPage(page + 1)}
         hasMore={true}
         loader={<h4>Loading...</h4>}
