@@ -14,21 +14,21 @@ export default function FullJobDescription(props) {
         />
         <h2 className="jobTitle">{props.location.state.title}</h2>
         <h3 className="companyName">{props.location.state.company}</h3>
-        <ul className="jobItems">
-          <li className="JobCategory">
-            {" "}
+
+        <div className="jobItems">
+          <p className="JobCategory">
             Category: {props.location.state.category}
-          </li>
-          <li className="jobRequirement">
-            {" "}
+          </p>
+          <p className="jobRequirement">
             Hirring: {props.location.state.requirement}
-          </li>
-          <li className="jobHours">Job Hours: {props.location.state.hours}</li>
-        </ul>
+          </p>
+          <p className="jobHours">Job Hours: {props.location.state.hours}</p>
+        </div>
+
         <div
           dangerouslySetInnerHTML={{ __html: props.location.state.description }}
         />
-        <a href={props.location.state.apply}>
+        <a href={props.location.state.apply} target="_blank">
           <button>apply</button>
         </a>
       </div>
