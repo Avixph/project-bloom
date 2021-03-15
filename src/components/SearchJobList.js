@@ -1,9 +1,12 @@
+
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
+
 
 //Post info goes here
 export default function SearchJobList() {
   const [page, setPage] = useState(1);
+
 
   const jobRequest = useSelector((state) => state.searches.searchJobs);
 
@@ -23,5 +26,6 @@ export default function SearchJobList() {
     });
   }
 
-  return <div className="scrollableDiv">{renderList()}</div>;
+  return <div>{renderList()}</div>;
+
 }
