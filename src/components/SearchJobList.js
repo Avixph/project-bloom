@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import Pagination from './Pagination'
-
+import { Pagination } from './Pagination';
 
 //Post info goes here
 export default function SearchJobList() {
@@ -11,7 +10,7 @@ export default function SearchJobList() {
   const loading = useSelector((state) => state.searches.status)
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(10);
+  const [postsPerPage, setPostsPerPage] = useState(15);
   
   //Get current posts
   const indexOfLastPost = currentPage * postsPerPage;
@@ -42,7 +41,8 @@ export default function SearchJobList() {
   
   return (
     <div>
-        {renderList()}
+      {renderList()}
+      <Pagination postsPerPage={postsPerPage} totalPosts={jobsRequest.length} />
     </div>        
   );
 }
