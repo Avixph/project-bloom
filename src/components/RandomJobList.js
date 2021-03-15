@@ -34,7 +34,7 @@ export default function RandomJobList() {
       <h1>Developer Jobs to Consider</h1>
       <button onClick={handleReload}>Reload</button>
       <br />
-      <section>{renderRandomList()}</section>;
+      <section>{renderRandomList()}</section>
     </div>
   );
 }
