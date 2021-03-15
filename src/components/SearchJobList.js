@@ -1,31 +1,24 @@
-
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-
+import SearchJobPost from "./SearchJobPost";
 
 //Post info goes here
 export default function SearchJobList() {
   const [page, setPage] = useState(1);
 
+  const SearchJobRequest = useSelector((state) => state.searches.searchJobs);
 
-  const jobRequest = useSelector((state) => state.searches.searchJobs);
-
-  if (!jobRequest) {
+  if (!SearchJobRequest) {
     return null;
   }
 
-  console.log(`There are ${jobRequest.length} jobs!`);
+  console.log(`There are ${SearchJobRequest.length} jobs!`);
 
   function renderList() {
-    return jobRequest.map((post, index) => {
-      return (
-        <ul>
-          <li key={index}>{post.company_name}</li>
-        </ul>
-      );
+    return SearchJobRequest.map((jobinfo, index) => {
+      return <SearchJobPost {...jobinfo} key={index} />;
     });
   }
 
   return <div>{renderList()}</div>;
-
 }
