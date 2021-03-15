@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import bloomLogo from "../images/logos/project-bloom-logo.svg";
+import LightsOut from "../components/LightsOut";
 
 export default function Header() {
   return (
@@ -21,6 +22,7 @@ export default function Header() {
             <NavLink exact to={"/about"}>
               About
             </NavLink>
+            <LightsOut />
           </li>
         </ul>
       </nav>

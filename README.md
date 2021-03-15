@@ -1,4 +1,4 @@
-# <div align="left">![bloom banner](src/images/design_elements/project-bloom-banner.svg) </div>
+# <div align="center">![bloom banner](src/images/design_elements/project-bloom-banner.svg) </div>
 
 ### `“Helping you blossom into your next career”`
 
