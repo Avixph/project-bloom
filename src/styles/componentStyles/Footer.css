@@ -12,22 +12,24 @@
   --title-font: "Roboto", sans-serif;
   --body-font: "Lato", sans-serif;
   --lm-shadow: 6px 6px 12px #745192, -6px -6px 12px #8059a2;
+  --lm-footer-shadow: 6px 6px 12px #745192, -6px -6px 12px #ceb2e632;
   --dm-shadow: 6px 6px 12px #ceb2e6, -6px -6px 12px #e4c4fe;
   --search-shadow: inset 6px 6px 9px #6e6c68ab, inset -6px -6px 60px #fff;
   --text-shadow: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Lato",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: var(--mauve);
+.footerArea {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
+  padding: 14px 0 5px;
+  text-align: center;
+  background: var(--mauve);
+  box-shadow: var(--lm-footer-shadow);
+  border-top: 2px var(--deep-champagne);
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.footerDetail {
+  font-size: 0.75rem;
+  color: var(--fourth-color);
+  font-weight: 800;
 }
