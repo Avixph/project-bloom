@@ -3,18 +3,18 @@ import noImage from "../images/logos/no-image-logo.svg";
 
 export default function SearchJobPost(props) {
   return (
-    <div classname="searchJobBlurb">
+    <div className="searchJobBlurb">
       <img
         src={props.company_logo_url ? props.company_logo_url : noImage}
         alt=""
         className="companyLogo"
       />
-      <h2 classname="jobTitle">{props.title}</h2>
-      <h3 classname="companyName">{props.company_name}</h3>
-      <div classname="jobItems">
-        <p classname="jobCategory">{props.category}</p>
-        <p classname="jobRequirement">{props.candidate_required_location}</p>
-        <p classname="jobHours">{props.job_type}</p>
+      <h2 className="jobTitle">{props.title}</h2>
+      <h3 className="companyName">{props.company_name}</h3>
+      <div className="jobItems">
+        <p className="jobCategory">{props.category}</p>
+        <p className="jobRequirement">{props.candidate_required_location}</p>
+        <p className="jobHours">{props.job_type}</p>
       </div>
       <NavLink
         to={{
@@ -34,7 +34,7 @@ export default function SearchJobPost(props) {
             : {},
         }}
       >
-        <button type="button" classname="detailedBttn">
+        <button type="button" className="detailedBttn">
           View <br /> Details!
         </button>
       </NavLink>

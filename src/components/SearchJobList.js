@@ -8,20 +8,25 @@ import SearchJobPost from "./SearchJobPost";
 
 //the useState is for infinte scroll
 export default function SearchJobList() {
-  const [page, setPage] = useState(1);
 
-  const SearchJobRequest = useSelector((state) => state.searches.searchJobs);
+  const jobsRequest = useSelector((state) => state.searches.searchJobs);
+  const status = useSelector((state) => state.searches.status)
 
-  if (!SearchJobRequest) {
-    return null;
-  }
 
-  console.log(`There are ${SearchJobRequest.length} jobs!`);
+  // console.log(`There are ${SearchJobRequest.length} jobs!`);
+
+
 
   const renderList = () => {
-    return SearchJobRequest.map((jobinfo, index) => {
-      return <SearchJobPost {...jobinfo} key={index} />;
-    });
+    if (status === "loading") {
+      return <h2>Loading...</h2>
+    } else if (status === "success") {
+      return jobsRequest.map((jobinfo, index) => {
+        return <SearchJobPost {...jobinfo} key={index} />;
+      });
+    } else {
+      <h2>Error: Please </h2>
+    }
   };
 
   return <div>{renderList()}</div>; //bc u can only ever return 1 div , need to wrap it

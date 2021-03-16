@@ -26,21 +26,21 @@ const searchSlice = createSlice({
 
   name: "jobSearches",
   initialState: {
-    searchJobs: undefined,
+    searchJobs: [],
     status: null,
   },
 
   extraReducers: {
     [fetchSearch.pending]: (state, action) => {
-      state.status = "loading jobs...";
+      state.status = "loading";
 
     },
     [fetchSearch.fulfilled]: (state, { payload }) => {
       state.searchJobs = payload;
-      state.status = "success!!!";
+      state.status = "success";
     },
     [fetchSearch.rejected]: (state, action) => {
-      state.status = "error: failed to load jobs!";
+      state.status = "failed";
     },
   },
 })
