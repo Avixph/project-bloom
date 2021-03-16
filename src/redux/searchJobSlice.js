@@ -10,13 +10,12 @@ export const fetchSearch = createAsyncThunk(
   async (obj) => {
 
     console.log(obj);
+    if (obj.field === "") return ["Fill in search field"]
+    
     const { data } = await axios.get(
       `https://remotive.io/api/remote-jobs?search=${obj.field}&limit=${obj.limit}`
     );
     return data.jobs;
-
-    // const data = fetchJobSearch({...obj});
-    // return data;
 
   }
 );
