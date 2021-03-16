@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import SearchJobPost from "./SearchJobPost";
-import DropDownTest from "./DropDownTest";
+//import DropDownTest from "./DropDownTest";
 
 //drop down goes here
 //step 1 make drop down without API
-
-//
 
 //the useState is for infinte scroll
 export default function SearchJobList() {
