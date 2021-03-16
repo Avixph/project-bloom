@@ -3,7 +3,7 @@ import noImage from "../images/logos/no-image-logo.svg";
 
 export default function RandomJobPost(props) {
   return (
-    <div className="randomJobBlurb">
+    <div className="jobBlurb">
       <div className="logoFrame">
         <img
           src={props.company_logo_url ? props.company_logo_url : noImage}
@@ -11,7 +11,6 @@ export default function RandomJobPost(props) {
           className="companyLogo"
         />
       </div>
-
       <h2 className="jobTitle">{props.title}</h2>
       <h3 className="companyName">{props.company_name}</h3>
       <div className="jobItems">
@@ -19,7 +18,6 @@ export default function RandomJobPost(props) {
         <p className="jobRequirement">{props.candidate_required_location}</p>
         <p className="jobHours">{props.job_type}</p>
       </div>
-
       <NavLink
         to={{
           pathname: "/jobDescription",

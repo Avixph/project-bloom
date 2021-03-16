@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchRandom } from "../redux/randomJobSlice";
-import RandomJobPost from "./RandomJobPost";
+import JobPost from "./JobPost";
 
 export default function RandomJobList() {
   // const [arr, setArr] = useState([])
@@ -25,7 +25,7 @@ export default function RandomJobList() {
 
   const renderRandomList = () => {
     return RandomJobRequest.map((jobInfo, index) => {
-      return <RandomJobPost {...jobInfo} key={index} />;
+      return <JobPost {...jobInfo} key={index} />;
     });
   };
 

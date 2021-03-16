@@ -1,4 +1,4 @@
-import "../styles/componentStyles/Footer.css";
+// import "../styles/componentStyles/Footer.css";
 export default function Footer() {
   return (
     <footer className="footerArea">

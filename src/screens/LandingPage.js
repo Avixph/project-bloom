@@ -8,27 +8,31 @@ import LightsOut from "../components/LightsOut";
 
 export default function LandingPage() {
   return (
-    <div className="landing">
+    <div className="landing h-screen">
       <header className="headerArea">
         <img src={bloomLogoLight} alt="" className="logo" />
         <LightsOut />
       </header>
-      <div>
-        <img
-          src={landingbannerlight}
-          alt=""
-          className="landingBanner"
-          style={{ width: "55%" }}
-        />
+      <div className="flex items-center justify-center ">
+        <div className="w-3/4">
+          <img
+            src={landingbannerlight}
+            alt=""
+            className="landingBanner"
+            style={{ width: "55%" }}
+          />
+        </div>
+        <div className="w-1/4">
+          <h1 className="text-russian_violet">
+            “Helping you blossom into your next career”
+          </h1>
+          <NavLink to={"/home"}>
+            <button type="button" className="enterBttn">
+              Enter
+            </button>
+          </NavLink>
+        </div>
       </div>
-      <div>
-        <h1>“Helping you blossom into your next career”</h1>
-      </div>
-      <NavLink to={"/home"}>
-        <button type="button" className="enterBttn">
-          Enter
-        </button>
-      </NavLink>
     </div>
   );
 }
