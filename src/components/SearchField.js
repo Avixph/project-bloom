@@ -8,23 +8,20 @@ import { fetchSearch } from "../redux/searchJobSlice"
 
 export default function SearchField() {
   
-  const SearchJobRequest = useSelector((state) => state.searches.searchJobs);
   const dispatch = useDispatch();
 
-  console.log(SearchJobRequest);
 
   const [search, setSearch] = useState("");
 
   const handleSearchInput = (e) => {
     e.preventDefault();
-
     setSearch(e.target.value);
   };
 
-  console.log(search);
+  // console.log(search);
 
   const handleSearchSubmit = () => {
-    dispatch(fetchSearch({ limit: 10, field: search }));
+      dispatch(fetchSearch({ limit: 10, field: search }));
   };
 
   return (
