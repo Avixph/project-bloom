@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import SearchJobPost from "./SearchJobPost";
+import loadingSpinner from "../images/loading/spinner.gif"
 //import DropDownTest from "./DropDownTest";
 
 //drop down goes here
@@ -24,7 +25,7 @@ export default function SearchJobList() {
       if (nextJobPosts !== 10) {
         setNextJobPosts(10);
       }
-      return <h2>Loading...</h2>
+      return <img src={loadingSpinner} alt="" />
     } else if (jobsRequest[0] === "Fill in search field") {
       return <h2>Complete search field.</h2>
     } else if (status === "success") {
@@ -36,12 +37,20 @@ export default function SearchJobList() {
     }
   };
 
+  const renderButton = () => {
+    if (status === "success") {
+      return (
+        nextJobPosts < jobsRequest.length && (
+          <button onClick={loadMore}>Load More</button>
+        )
+      )
+    }
+  }
+
   return (
     <div>
       {renderList()}
-      {nextJobPosts < jobsRequest.length && (
-          <button onClick={loadMore}>Load More</button>
-        )}
+      {renderButton()}
     </div>
   ) //bc u can only ever return 1 div , need to wrap it
 }
