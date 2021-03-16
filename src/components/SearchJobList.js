@@ -12,22 +12,34 @@ export default function SearchJobList() {
   const jobsRequest = useSelector((state) => state.searches.searchJobs);
   const status = useSelector((state) => state.searches.status)
 
+  const [nextJobPosts, setNextJobPosts] = useState(15)
 
-  // console.log(`There are ${SearchJobRequest.length} jobs!`);
-
+  const loadMore = () => {
+    setNextJobPosts(nextJobPosts + 15);
+  }
 
 
   const renderList = () => {
     if (status === "loading") {
+      if (nextJobPosts !== 15) {
+        setNextJobPosts(15);
+      }
       return <h2>Loading...</h2>
     } else if (status === "success") {
-      return jobsRequest.map((jobinfo, index) => {
+      return jobsRequest.slice(0, nextJobPosts).map((jobinfo, index) => {
         return <SearchJobPost {...jobinfo} key={index} />;
       });
     } else {
-      <h2>Error: Please </h2>
+      <h2>Error: Please Try Again! </h2>
     }
   };
 
-  return <div>{renderList()}</div>; //bc u can only ever return 1 div , need to wrap it
+  return (
+    <div>
+      {renderList()}
+      {nextJobPosts < jobsRequest.length && (
+          <button onClick={loadMore}>Load More</button>
+        )}
+    </div>
+  ) //bc u can only ever return 1 div , need to wrap it
 }
