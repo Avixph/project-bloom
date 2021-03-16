@@ -24,5 +24,5 @@ export default function SearchJobList() {
     });
   };
 
-  return <div><DropDownTest/><div>{renderList()}</div></div>; //bc u can only ever return 1 div , need to wrap it
+  return <div>{renderList()}</div>; //bc u can only ever return 1 div , need to wrap it
 }
