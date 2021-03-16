@@ -28,8 +28,8 @@ export async function fetchJobCategory(category, limit) {
 //   return results;
 // }
 
-export async function fetchJobSearch(obj) {
-  const searchAPI = `${REMOTIVE_URL}search=${obj.feild}&limit=${obj.limit}`;
+export async function fetchJobSearch(field) {
+  const searchAPI = `${REMOTIVE_URL}search=${field}`;
 
   const results = await axios.get(searchAPI).then(({ data }) => {
     console.log(data.jobs);
