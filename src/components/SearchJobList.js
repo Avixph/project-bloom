@@ -1,48 +1,31 @@
-import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
-import { Pagination } from './Pagination';
+
+import React, { useState } from "react";
+import { useSelector } from "react-redux";
+
 
 //Post info goes here
 export default function SearchJobList() {
+  const [page, setPage] = useState(1);
 
-  //list of jobs
-  const jobsRequest = useSelector((state) => state.searches.searchJobs);
-  const loading = useSelector((state) => state.searches.status)
 
-  const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(15);
-  
-  //Get current posts
-  const indexOfLastPost = currentPage * postsPerPage;
-  const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  
+  const jobRequest = useSelector((state) => state.searches.searchJobs);
 
-  if (!jobsRequest) { 
-    return null
+  if (!jobRequest) {
+    return null;
   }
-  
-  const currentPosts = jobsRequest.slice(indexOfFirstPost, indexOfLastPost);
-  console.log(currentPosts)
 
-  
+  console.log(`There are ${jobRequest.length} jobs!`);
 
   function renderList() {
+    return jobRequest.map((post, index) => {
+      return (
+        <ul>
+          <li key={index}>{post.company_name}</li>
+        </ul>
+      );
+    });
+  }
 
-    return <ul>
-      {currentPosts.map((post, index) => (
-        <li key={index}>
-          {post.company_name}
-        </li>
-      ))}
-      </ul>
-  };
-  
-// console.log(jobsRequest.length)
-  
-  return (
-    <div>
-      {renderList()}
-      <Pagination postsPerPage={postsPerPage} totalPosts={jobsRequest.length} />
-    </div>        
-  );
+  return <div>{renderList()}</div>;
+
 }
