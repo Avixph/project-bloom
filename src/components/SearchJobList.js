@@ -1,28 +1,55 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import SearchJobPost from "./SearchJobPost";
+import JobPost from "./JobPost";
+import loadingSpinner from "../images/loading/spinner.gif";
 //import DropDownTest from "./DropDownTest";
 
 //drop down goes here
 //step 1 make drop down without API
 
-//the useState is for infinte scroll
 export default function SearchJobList() {
-  const [page, setPage] = useState(1);
+  const jobsRequest = useSelector((state) => state.searches.searchJobs);
+  const status = useSelector((state) => state.searches.status);
 
-  const SearchJobRequest = useSelector((state) => state.searches.searchJobs);
+  const [nextJobPosts, setNextJobPosts] = useState(10);
 
-  if (!SearchJobRequest) {
-    return null;
-  }
-
-  console.log(`There are ${SearchJobRequest.length} jobs!`);
-
-  const renderList = () => {
-    return SearchJobRequest.map((jobinfo, index) => {
-      return <SearchJobPost {...jobinfo} key={index} />;
-    });
+  const loadMore = () => {
+    setNextJobPosts(nextJobPosts + 10);
   };
 
-  return <div>{renderList()}</div>; //bc u can only ever return 1 div , need to wrap it
+  console.log(jobsRequest);
+
+  const renderList = () => {
+    if (status === "loading") {
+      if (nextJobPosts !== 10) {
+        setNextJobPosts(10);
+      }
+      return <img src={loadingSpinner} alt="" />;
+    } else if (jobsRequest[0] === "Fill in search field") {
+      return <h2>Complete search field.</h2>;
+    } else if (status === "success") {
+      return jobsRequest.slice(0, nextJobPosts).map((jobinfo, index) => {
+        return <JobPost {...jobinfo} key={index} />;
+      });
+    } else {
+      <h2>Error: Please Try Again! </h2>;
+    }
+  };
+
+  const renderButton = () => {
+    if (status === "success") {
+      return (
+        nextJobPosts < jobsRequest.length && (
+          <button onClick={loadMore}>Load More</button>
+        )
+      );
+    }
+  };
+
+  return (
+    <div>
+      {renderList()}
+      {renderButton()}
+    </div>
+  ); //bc u can only ever return 1 div , need to wrap it
 }

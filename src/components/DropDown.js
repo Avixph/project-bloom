@@ -4,6 +4,7 @@ import onClickOutside from "react-onclickoutside";
 export default function Dropdown({ title, items, multiSelect = false }) {
   const [open, setOpen] = useState(false);
   const [selection, setSelection] = useState([]);
+  
   const toggle = () => setOpen(!open);
   Dropdown.handleClickOutside = () => setOpen(false);
 

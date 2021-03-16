@@ -1,49 +1,36 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-
-// import { fetchJobsSearch } from "../services/fetchJobs";
-import axios from "axios";
-// import { fetchJobSearch } from "../services/fetchJobs";
-
+import { fetchJobSearch } from "../services/fetchJobs";
 
 export const fetchSearch = createAsyncThunk(
   "jobSearches/fetchSearch",
-  async (obj) => {
+  async (field) => {
+    console.log(field);
+    if (field === "") return ["Fill in search field"];
 
-    console.log(obj);
-    const { data } = await axios.get(
-      `https://remotive.io/api/remote-jobs?search=${obj.field}&limit=${obj.limit}`
-    );
-    return data.jobs;
-
-    // const data = fetchJobSearch({...obj});
-    // return data;
-
+    const data = fetchJobSearch(field);
+    return data;
   }
 );
 
 const searchSlice = createSlice({
-
-
   name: "jobSearches",
   initialState: {
-    searchJobs: undefined,
+    searchJobs: [],
     status: null,
   },
 
   extraReducers: {
     [fetchSearch.pending]: (state, action) => {
-      state.status = "loading jobs...";
-
+      state.status = "loading";
     },
     [fetchSearch.fulfilled]: (state, { payload }) => {
       state.searchJobs = payload;
-      state.status = "success!!!";
+      state.status = "success";
     },
     [fetchSearch.rejected]: (state, action) => {
-      state.status = "error: failed to load jobs!";
+      state.status = "failed";
     },
   },
-})
-
+});
 
 export default searchSlice.reducer;
