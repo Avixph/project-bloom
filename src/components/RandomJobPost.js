@@ -4,11 +4,14 @@ import noImage from "../images/logos/no-image-logo.svg";
 export default function RandomJobPost(props) {
   return (
     <div className="randomJobBlurb">
-      <img
-        src={props.company_logo_url ? props.company_logo_url : noImage}
-        alt=""
-        className="companyLogo"
-      />
+      <div className="logoFrame">
+        <img
+          src={props.company_logo_url ? props.company_logo_url : noImage}
+          alt=""
+          className="companyLogo"
+        />
+      </div>
+
       <h2 className="jobTitle">{props.title}</h2>
       <h3 className="companyName">{props.company_name}</h3>
       <div className="jobItems">

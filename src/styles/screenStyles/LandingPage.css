@@ -17,17 +17,18 @@
   --text-shadow: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Lato",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.headerArea {
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   background-color: var(--mauve);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.logo {
+  width: 12rem;
+  padding: 6px 0;
+  margin-left: 20px;
+  overflow: hidden;
+  float: left;
 }

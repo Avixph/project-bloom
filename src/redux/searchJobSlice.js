@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-import { fetchJobsSearch } from "../services/fetchJobs";
+// import { fetchJobsSearch } from "../services/fetchJobs";
 import axios from "axios";
 // import { fetchJobSearch } from "../services/fetchJobs";
 

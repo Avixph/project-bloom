@@ -28,7 +28,7 @@ export default function FullJobDescription(props) {
         <div
           dangerouslySetInnerHTML={{ __html: props.location.state.description }}
         />
-        <a href={props.location.state.apply} target="_blank">
+        <a href={props.location.state.apply} target="_blank" rel="noreferrer">
           <button>apply</button>
         </a>
       </div>
