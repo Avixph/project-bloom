@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import SearchJobPost from "./SearchJobPost";
+//import DropDownTest from "./DropDownTest";
 
-//Post info goes here
+//drop down goes here
+//step 1 make drop down without API
+
+//the useState is for infinte scroll
 export default function SearchJobList() {
   const [page, setPage] = useState(1);
 
@@ -20,5 +24,5 @@ export default function SearchJobList() {
     });
   };
 
-  return <div>{renderList()}</div>;
+  return <div>{renderList()}</div>; //bc u can only ever return 1 div , need to wrap it
 }

@@ -1,4 +1,5 @@
 // searching input + button
+//using Redux react toolkit and slice
 
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -31,7 +32,7 @@ export default function SearchField() {
     
       <input
         type="Search"
-        placeholder="Search"
+        placeholder="Search Jobs"
         value={search}
         onChange={handleSearchInput}
       />
