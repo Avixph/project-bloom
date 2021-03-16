@@ -17,7 +17,7 @@ export default function RandomJobList() {
 
   useEffect(() => {
     dispatch(fetchRandom());
-  }, []);
+  }, [dispatch]);
 
   const handleReload = () => {
     dispatch(fetchRandom());

@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
+
+:root {
+  --isabelline: #f9f6f2;
+  --deep-champagne: #ffd085;
+  --mauve: #d9bbf2;
+  --african-violet: #aa88c6;
+  --royal-purple: #7a559a;
+  --russian-violet: #240046;
+  --platinum: #e5e5e5;
+  --rich-black-fogar-39: #121212;
+  --title-font: "Roboto", sans-serif;
+  --body-font: "Lato", sans-serif;
+  --lm-shadow: 6px 6px 12px #745192, -6px -6px 12px #8059a2;
+  --lm-header-shadow: 6px 6px 12px #74519232, -6px -6px 12px #8059a2;
+  --dm-shadow: 6px 6px 12px #ceb2e6, -6px -6px 12px #e4c4fe;
+  --search-shadow: inset 6px 6px 9px #6e6c68ab, inset -6px -6px 60px #fff;
+  --text-shadow: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
+}
+
+.headerArea {
+  /* height: 85px; */
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -16px;
+  z-index: 1;
+  /* background-color: var(--mauve); */
+  /* box-shadow: var(--lm-header-shadow); */
+}
+
+/* .headerArea::after {
+  box-shadow: var(--lm-header-shadow);
+} */
+
+.logo {
+  padding: 6px 0;
+  margin-left: 20px;
+  overflow: hidden;
+  float: left;
+}
+
+.headerArea nav {
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-right: 20px;
+  padding: 4px 0;
+}
+
+.headerArea nav ul li {
+  /* float: right; */
+  /* list-style-type: none;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+  font-size: 1.3rem;
+  font-weight: 800; */
+  display: inline-block;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+  font-family: var(--title-font);
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+header nav ul li a {
+  color: var(--fourth-color);
+}

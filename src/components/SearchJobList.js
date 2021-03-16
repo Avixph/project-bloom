@@ -14,11 +14,11 @@ export default function SearchJobList() {
 
   console.log(`There are ${SearchJobRequest.length} jobs!`);
 
-  function renderList() {
+  const renderList = () => {
     return SearchJobRequest.map((jobinfo, index) => {
       return <SearchJobPost {...jobinfo} key={index} />;
     });
-  }
+  };
 
   return <div>{renderList()}</div>;
 }

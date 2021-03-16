@@ -1,0 +1,22 @@
+{
+  "teamBloom": [
+    {
+      "name": { "first": "Angel B.", "last": "Fernandez", "role": "Technical Lead + UX/UI Designer" },
+      "pic":"https://media-exp1.licdn.com/dms/image/C4E03AQEDG73WFw_ltA/profile-displayphoto-shrink_800_800/0/1586570574976?e=1621468800&v=beta&t=VLy8K_z34ErnUMTOuSsGK96aWbNsKwEmBXe-6ddp-oM",
+      "blurb": "Personable and highly motivated. When not designing or programming, out exploring new things the world has to offer." ,
+      "links": { "linkedin": "https://www.linkedin.com/in/angelbienvenidofernandez/", "github": "https://github.com/Avixph" }
+    },
+    {
+      "name": { "first": "David", "last": "Espinal", "role": "Front-End Web Developer" },
+      "pic":"https://media-exp1.licdn.com/dms/image/C4E03AQH8Yd6J65J22w/profile-displayphoto-shrink_800_800/0/1600467680059?e=1621468800&v=beta&t=7vvXLfj3blJfUnHlUBELHHwcA5-36Qnxne7ZS0nsNNs",
+      "blurb": "Web developer at The Knowledge House. I take interest in enhancing my programming skills, particularly JavaScript" ,
+      "links": { "linkedin": "https://www.linkedin.com/in/david-espinal-28b91a1b7/", "github": "https://github.com/DEsp04" }
+    },
+    {
+      "name": { "first": "Quiana", "last": "Berry", "role": "Product Manager +  Front-End Web Developer" },
+      "pic":"https://media-exp1.licdn.com/dms/image/C5603AQFfsm2lBT6k6g/profile-displayphoto-shrink_800_800/0/1611038305672?e=1621468800&v=beta&t=MoG7gPC94Di1Q3EvKY98I8OwqSo9rL2KdZsMPLVq4gg",
+      "blurb": "" ,
+      "links": { "linkedin": "https://www.linkedin.com/in/quiana-c-berry-b727a7143/", "github": "https://github.com/berryq460" }
+    }
+  ]
+}
