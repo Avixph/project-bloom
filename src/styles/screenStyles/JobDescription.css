@@ -31,6 +31,29 @@
     padding: 4%;
     border-radius: 10px;
   }
+
+  .jobDetail div:nth-child(1) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .jobDescripTitle {
+    width: 60%;
+    margin-right: 3%;
+    text-align: center;
+  }
+
+  .logoFrame {
+    width: 24%;
+  }
+
+  .logoFrame img {
+    width: 50%;
+  }
+
+
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
