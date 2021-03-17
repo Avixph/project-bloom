@@ -36,6 +36,8 @@
     margin-bottom: 2%;
     margin-left: 5%;
     font-size: 3.8vw;
+    text-align: center;
+    color: var(--russian-violet);
   }
 
   .randomList:nth-child(2) button:nth-child(2){
