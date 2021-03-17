@@ -48,13 +48,9 @@ export default function SearchJobList() {
   };
 
   return (
-    <div>
-      <div className="jobList">
-        {renderList()}
-      </div>
-      <div className="button">
-        {renderButton()}
-      </div>
+    <div className="searchContainer">
+      <section className="searchList">{renderList()}</section>
+      <section className="button">{renderButton()}</section>
     </div>
   ); //bc u can only ever return 1 div , need to wrap it
 }

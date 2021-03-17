@@ -30,9 +30,11 @@ export default function RandomJobList() {
   };
 
   return (
-    <div className="randomList">
+    <div className="randomContainer">
       <h1>Remote Jobs Available</h1>
-      <button onClick={handleReload}>Reload</button>
+      <button onClick={handleReload} className="reloadBttn">
+        Reload
+      </button>
       <br />
       <section>{renderRandomList()}</section>
     </div>
