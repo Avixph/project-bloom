@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import noImage from "../images/logos/no-image-logo.svg";
 
-export default function RandomJobPost(props) {
+export default function JobPost(props) {
   return (
     <div className="jobBlurb">
       <div className="logoFrame">

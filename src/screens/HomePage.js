@@ -2,10 +2,10 @@ import Header from "../components/Header";
 import RandomJobList from "../components/RandomJobList";
 import Footer from "../components/Footer";
 
-export default function HomePage({ lights, handleLights }) {
+export default function HomePage() {
   return (
     <div className="home">
-      <Header handleLights={handleLights} />
+      <Header />
       <RandomJobList />
       <Footer />
     </div>
