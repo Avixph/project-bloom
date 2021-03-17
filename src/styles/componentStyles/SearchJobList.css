@@ -16,3 +16,66 @@
   --search-shadow: inset 6px 6px 9px #6e6c68ab, inset -6px -6px 60px #fff;
   --text-shadow: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
 }
+
+
+/* below is my css code-------------------- */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+  .jobList {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 4%;
+    justify-content: space-around;
+  }
+
+  .jobBlurb{
+    width: 35%;
+    margin-bottom: 2%;
+    background-color: var(--deep-champagne);
+    padding: 2% 2%;
+    border-radius: 20px;
+  }
+
+  .button {
+    margin: 10%;
+  }
+
+  .jobItems {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+
+  .jobRequirement {
+    margin-left: 15%;
+    width: 100px;
+  }
+
+  .jobHours {
+    margin-right: 25%;
+  }
+
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 882px and up) */
+@media only screen and (min-width: 882px) {}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
+/* Extra large devices (large laptops and desktops, 1300px and up) */
+@media only screen and (min-width: 1400px) {}
