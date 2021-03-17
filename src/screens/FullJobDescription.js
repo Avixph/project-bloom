@@ -11,7 +11,7 @@ export default function FullJobDescription(props) {
         <div>
         <h2 className="jobDescripTitle">{props.location.state.title}</h2>
           
-          <div className="logoFrame">
+          <div className="logoFrameDescrip">
             <img
               src={props.location.state.logo ? props.location.state.logo : noImage}
               alt=""
@@ -32,13 +32,17 @@ export default function FullJobDescription(props) {
         </div>
 
         <div
+          className ="jobDescripContent"
           dangerouslySetInnerHTML={{ __html: props.location.state.description }}
         />
-        <a href={props.location.state.apply} target="_blank" rel="noreferrer">
-          <button>apply</button>
-        </a>
+        <div className="applyContainer">
+          <a className="applyButton" href={props.location.state.apply} target="_blank" rel="noreferrer">
+            <button>apply</button>
+          </a>
+        </div>
       </div>
       <Footer />
     </div>
   );
 }
+

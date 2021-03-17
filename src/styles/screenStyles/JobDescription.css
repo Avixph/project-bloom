@@ -25,11 +25,13 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
   .jobDetail {
     margin: 13% 5% 6rem 5%;
     background-color: var(--deep-champagne);
     padding: 4%;
     border-radius: 10px;
+    color: var(--rich-black-fogar-39)
   }
 
   .jobDetail div:nth-child(1) {
@@ -42,16 +44,52 @@
     width: 60%;
     margin-right: 3%;
     text-align: center;
+    color: var(--russian-violet);
   }
 
-  .logoFrame {
+  .logoFrameDescrip {
     width: 24%;
   }
 
-  .logoFrame img {
+  .logoFrameDescrip img {
     width: 50%;
   }
 
+  .companyName {
+    text-align: center;
+  }
+
+  .jobDecripItems {
+    display: flex;
+    justify-content: center;
+  }
+
+  .jobDecripItems p {
+    margin: 0;
+    width: 33%;
+    text-align: center;
+  }
+
+  .jobDescripContent {
+    margin-top: 4%;
+  }
+
+  .applyContainer {
+    text-align: center; 
+    margin-top: 4%;
+  }
+
+  .applyButton button {
+    color: var(--deep-champagne);
+    background-color: var(--russian-violet);
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    width: 11%;
+    cursor: pointer;
+   
+  }
 
 
 }
@@ -68,11 +106,25 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
+  
+
+  .jobDescripTitle {
+    font-size: 3vw;
+  }
+
+  .companyName {
+    font-size: 2.2vw;
+  }
+
+ 
 
 }
 
 
 /* Extra large devices (large laptops and desktops, 1300px and up) */
 @media only screen and (min-width: 1400px) {
- 
+  .applyButton button {
+    font-size: 1.1rem;
+  }
 }
+
