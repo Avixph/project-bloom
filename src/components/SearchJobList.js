@@ -1,3 +1,4 @@
+import "../styles/componentStyles/SearchJobList.css";
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import JobPost from "./JobPost";
@@ -48,8 +49,12 @@ export default function SearchJobList() {
 
   return (
     <div>
-      {renderList()}
-      {renderButton()}
+      <div className="jobList">
+        {renderList()}
+      </div>
+      <div className="button">
+        {renderButton()}
+      </div>
     </div>
   ); //bc u can only ever return 1 div , need to wrap it
 }

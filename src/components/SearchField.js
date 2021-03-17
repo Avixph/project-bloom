@@ -24,14 +24,14 @@ export default function SearchField() {
   };
 
   return (
-    <div>
+    <div className="searchField">
       <input
         type="Search"
         placeholder="Search for Jobs"
         value={search}
         onChange={handleSearchInput}
       />
-
+      <div className="searchDivider"></div>
       <button onClick={handleSearchSubmit}>Search</button>
     </div>
   );

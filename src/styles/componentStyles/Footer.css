@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap"); */
 
 :root {
   --isabelline: #f9f6f2;
@@ -18,12 +18,13 @@
   --text-shadow: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
 }
 
+/*
 .footerArea {
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky; Safari
   position: sticky;
   bottom: 0;
   padding: 14px 0 5px;
-  text-align: center;
+  
   background: var(--mauve);
   box-shadow: var(--lm-footer-shadow);
   border-top: 2px var(--deep-champagne);
@@ -32,4 +33,44 @@
   font-size: 0.75rem;
   color: var(--fourth-color);
   font-weight: 800;
+  text-align: center;
 }
+*/
+
+
+
+/* below is my css code-------------------- */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .footerArea {
+    text-align: center; 
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: var(--mauve); 
+    border-top: var(--deep-champagne) solid 2px;
+  }
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 882px and up) */
+@media only screen and (min-width: 882px) {}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
+/* Extra large devices (large laptops and desktops, 1300px and up) */
+@media only screen and (min-width: 1400px) {}
+
