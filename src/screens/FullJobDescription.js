@@ -21,12 +21,12 @@ export default function FullJobDescription(props) {
         </div>
         <h3 className="companyName">{props.location.state.company}</h3>
 
-        <div className="jobItems">
+        <div className="jobDecripItems">
           <p className="JobCategory">
             Category: {props.location.state.category}
           </p>
-          <p className="jobRequirement">
-            Hirring: {props.location.state.requirement}
+          <p className="jobReqmnt">
+            Hiring: {props.location.state.requirement}
           </p>
           <p className="jobHours">Job Hours: {props.location.state.hours}</p>
         </div>
