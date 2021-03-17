@@ -143,6 +143,7 @@
     font-size: 1.2rem;
     text-align: center;
     width: 52%;
+    box-shadow: var(--dm-shadow);
   }
   
   .searchDivider {
@@ -164,9 +165,9 @@
     cursor: pointer;
   }
 
-  /* main div:first-child div:nth-child(2) button {
-    cursor: pointer;  
-  } */
+  .searchField button:hover {
+      box-shadow: var(--dm-shadow);
+  }
 
 }
 

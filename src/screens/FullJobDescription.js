@@ -1,3 +1,4 @@
+import "../styles/screenStyles/JobDescription.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import noImage from "../images/logos/no-image-logo.svg";
@@ -7,12 +8,17 @@ export default function FullJobDescription(props) {
     <div className="FullJobDescription">
       <Header />
       <div className="jobDetail">
-        <img
-          src={props.location.state.logo ? props.location.state.logo : noImage}
-          alt=""
-          className="companyLogo"
-        />
-        <h2 className="jobTitle">{props.location.state.title}</h2>
+        <div>
+        <h2 className="jobDescripTitle">{props.location.state.title}</h2>
+          
+          <div className="logoFrame">
+            <img
+              src={props.location.state.logo ? props.location.state.logo : noImage}
+              alt=""
+              className="companyLogo"
+            />
+          </div>
+        </div>
         <h3 className="companyName">{props.location.state.company}</h3>
 
         <div className="jobItems">
