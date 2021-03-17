@@ -8344,6 +8344,11 @@ postcss-focus-within@^3.0.0:
   dependencies:
     postcss "^7.0.2"
 
+postcss-focus@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-focus/-/postcss-focus-5.0.1.tgz#dd1a6a126d5dfca458531674a35ff53610e92737"
+  integrity sha512-iVP+4VLenlI0tHHJD+7HyE+7pQ6Hlg3+Zm/xTwNE1LT7OgmYC4r1ale6AnEkABGNKKE3j1LkF/BNcv89lDoICw==
+
 postcss-font-variant@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/postcss-font-variant/-/postcss-font-variant-4.0.1.tgz"
@@ -8871,7 +8876,7 @@ postcss@^8.1.0:
 
 postcss@^8.2.1:
   version "8.2.8"
-  resolved "https://registry.npmjs.org/postcss/-/postcss-8.2.8.tgz"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.2.8.tgz#0b90f9382efda424c4f0f69a2ead6f6830d08ece"
   integrity sha512-1F0Xb2T21xET7oQV9eKuctbM9S7BC0fetoHCc4H13z0PT6haiRLP4T0ZY4XWh7iLP0usgqykT6p9B2RtOf4FPw==
   dependencies:
     colorette "^1.2.2"

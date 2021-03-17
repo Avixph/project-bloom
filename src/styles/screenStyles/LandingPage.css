@@ -19,10 +19,13 @@
 
 .headerArea {
   overflow: hidden;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: var(--mauve);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: var(--mauve);
+    box-shadow: var(--lm-header-shadow);
 }
 
 .logo {

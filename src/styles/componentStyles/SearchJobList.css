@@ -17,16 +17,14 @@
   --text-shadow: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
 }
 
-
 /* below is my css code-------------------- */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
-
+@media only screen and (max-width: 600px) {
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  
   .jobList {
     display: flex;
     text-align: center;
@@ -35,7 +33,7 @@
     justify-content: space-around;
   }
 
-  .jobBlurb{
+  .jobBlurb {
     width: 35%;
     margin-bottom: 2%;
     background-color: var(--deep-champagne);
@@ -43,9 +41,9 @@
     border-radius: 20px;
   }
 
-  .button {
-    margin: 10%;
-  }
+  /* .searchBttn {
+    margin: 00%;
+  } */
 
   .jobItems {
     display: flex;
@@ -61,21 +59,20 @@
   .jobHours {
     margin-right: 25%;
   }
-
-
-
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 882px and up) */
-@media only screen and (min-width: 882px) {}
-
+@media only screen and (min-width: 882px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
-
+@media only screen and (min-width: 1200px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1300px and up) */
-@media only screen and (min-width: 1400px) {}
+@media only screen and (min-width: 1400px) {
+}
