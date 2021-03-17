@@ -1,3 +1,4 @@
+import { unwrapResult } from "@reduxjs/toolkit";
 import { NavLink } from "react-router-dom";
 import noImage from "../images/logos/no-image-logo.svg";
 
@@ -13,11 +14,10 @@ export default function RandomJobPost(props) {
       </div>
       <h2 className="jobTitle">{props.title}</h2>
       <h3 className="companyName">{props.company_name}</h3>
-      <div className="jobItems">
-        <p className="JobCategory">{props.category}</p>
-        <p className="jobRequirement">{props.candidate_required_location}</p>
-        <p className="jobHours">{props.job_type}</p>
-      </div>
+      {/* <ul className="jobItems">
+        <li className="jobRequirement">{props.candidate_required_location}</li>
+        <li className="jobHours">{props.job_type}</li>
+      </ul> */}
       <NavLink
         to={{
           pathname: "/jobDescription",
