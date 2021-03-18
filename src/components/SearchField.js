@@ -19,7 +19,7 @@ export default function SearchField() {
 
   // console.log(search);
 
-  const handleSearchSubmit = () => {
+  const handleSearchSubmit = ({ dark }) => {
     const field = search;
     dispatch(fetchSearch(field));
   };

@@ -17,21 +17,24 @@
   --text-shadow: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
 }
 
-
-
 /* below is my css code-------------------- */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
-
-
 }
-
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .pageTitle{
+  .pageTitle {
+    margin-top: 5.2%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    font-size: 3.8vw;
+    text-align: center;
+    color: var(--platinum);
+  }
+
+  .darkPageTitle {
     margin-top: 13%;
     margin-bottom: 2%;
     margin-left: 5%;
@@ -40,7 +43,7 @@
     color: var(--russian-violet);
   }
 
-  .randomList:nth-child(2) button:nth-child(2){
+  .randomList:nth-child(2) button:nth-child(2) .darkBttn:nth-child(2) {
     color: var(--deep-champagne);
     background-color: var(--russian-violet);
     border: none;
@@ -51,7 +54,7 @@
     cursor: pointer;
     width: 11%;
   }
-  
+
   .randomList section {
     display: flex;
     text-align: center;
@@ -64,29 +67,23 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  
 }
 
 /* Large devices (laptops/desktops, 882px and up) */
 @media only screen and (min-width: 882px) {
-
 }
 
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
-
+@media only screen and (min-width: 1200px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1300px and up) */
 @media only screen and (min-width: 1400px) {
-
-  .randomList:nth-child(2) button:nth-child(2){
+  .randomList:nth-child(2) button:nth-child(2) .darkBttn:nth-child(2) {
     font-size: 1.3rem;
   }
 
   .jobBlurb {
     width: 580px;
   }
-
-
 }
