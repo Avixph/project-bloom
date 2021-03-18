@@ -97,7 +97,7 @@
 
   .headerArea {
     overflow: hidden;
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0;
     background-color: var(--russian-violet);
@@ -151,6 +151,9 @@
   .headerContent ul li a:hover {
     color: var(--deep-champagne);
   }
+  .headerContent ul .darkLi a:hover {
+    color: var(--deep-champagne);
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -164,6 +167,9 @@
   }
 
   .headerContent ul li a {
+    font-size: 2.2vw;
+  }
+  .headerContent ul .darkLi a {
     font-size: 2.2vw;
   }
 }

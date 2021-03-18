@@ -29,7 +29,7 @@ export default function SearchJobList({ dark }) {
     } else if (jobsRequest[0] === "Fill in search field") {
       return <h2>Complete search field.</h2>;
     } else if (status === "success") {
-      return jobsRequest.slice(0, nextJobPosts).map((jobinfo, index) => {
+      return jobsRequest.slice(0, nextJobPosts).map((jobinfo, index, dark) => {
         return <JobPost dark={dark} {...jobinfo} key={index} />;
       });
     } else {

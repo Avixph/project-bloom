@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 //(Below)import Thunk
 import { fetchSearch } from "../redux/searchJobSlice";
 
-export default function SearchField() {
+export default function SearchField({ dark }) {
   const dispatch = useDispatch();
 
   const [search, setSearch] = useState("");
@@ -19,7 +19,7 @@ export default function SearchField() {
 
   // console.log(search);
 
-  const handleSearchSubmit = ({ dark }) => {
+  const handleSearchSubmit = () => {
     const field = search;
     dispatch(fetchSearch(field));
   };

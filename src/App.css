@@ -17,14 +17,10 @@
   --text-shadow: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
 }
 
-.App {
+.App-dark {
   background-color: var(--russian-violet);
 }
 
-.App-dark {
+.App {
   background-color: var(--mauve);
 }
-
-/* .darkJobBlurb {
-  background-color: var(--platinum);
-} */

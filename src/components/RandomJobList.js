@@ -23,7 +23,7 @@ export default function RandomJobList({ dark }) {
   };
 
   const renderRandomList = () => {
-    return RandomJobRequest.map((jobInfo, index) => {
+    return RandomJobRequest.map((jobInfo, index, dark) => {
       return <JobPost dark={dark} {...jobInfo} key={index} />;
     });
   };

@@ -14,8 +14,14 @@ function App() {
     setDark((light) => !light);
   };
 
+  if (!dark) {
+    document.body.classList.add("App-dark");
+  } else if (dark) {
+    document.body.classList.remove("App");
+  }
+
   return (
-    <div className={dark ? "App" : "App-dark"}>
+    <div className={dark ? "App-dark" : "App"}>
       <main>
         <Switch>
           <Route exact path="/">

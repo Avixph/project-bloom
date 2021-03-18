@@ -43,9 +43,21 @@
     color: var(--russian-violet);
   }
 
-  .randomList:nth-child(2) button:nth-child(2) .darkBttn:nth-child(2) {
+  .randomList:nth-child(2) button:nth-child(2) {
+    color: var(--russian-violet);
+    background-color: var(--deep-champagne);
+    font-weight: bolder;
+    margin: 0 44%;
+    outline: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 11%;
+  }
+  .randomList:nth-child(2) .darkBttn:nth-child(2) {
     color: var(--deep-champagne);
     background-color: var(--russian-violet);
+    font-weight: bolder;
     border: none;
     margin: 0 44%;
     outline: none;
@@ -79,11 +91,17 @@
 
 /* Extra large devices (large laptops and desktops, 1300px and up) */
 @media only screen and (min-width: 1400px) {
-  .randomList:nth-child(2) button:nth-child(2) .darkBttn:nth-child(2) {
+  .randomList:nth-child(2) button:nth-child(2) {
+    font-size: 1.3rem;
+  }
+  .randomList:nth-child(2) .darkBttn:nth-child(2) {
     font-size: 1.3rem;
   }
 
   .jobBlurb {
+    width: 580px;
+  }
+  .darkJobBlurb {
     width: 580px;
   }
 }

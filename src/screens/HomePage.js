@@ -1,4 +1,4 @@
-import "../styles/screenStyles/HomePage.css";
+import "../styles/screenStyles/Homepage.css";
 import Header from "../components/Header";
 import RandomJobList from "../components/RandomJobList";
 import Footer from "../components/Footer";
