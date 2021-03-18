@@ -2,7 +2,7 @@ import { unwrapResult } from "@reduxjs/toolkit";
 import { NavLink } from "react-router-dom";
 import noImage from "../images/logos/no-image-logo.svg";
 
-export default function JobPost(props) {
+export default function RandomJobPost(props) {
   return (
     <div className="jobBlurb">
       <div className="logoFrame">
@@ -37,7 +37,7 @@ export default function JobPost(props) {
         }}
       >
         <button type="button" className="detailsBttn">
-          View <br /> Details
+          Details
         </button>
       </NavLink>
     </div>

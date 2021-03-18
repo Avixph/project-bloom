@@ -20,13 +20,13 @@
 
 /* .headerArea {
   /* height: 85px; */
-/* overflow: hidden;
+  /* overflow: hidden;
   position: -webkit-sticky;
   position: sticky;
   top: -16px;
   z-index: 1; */
-/* background-color: var(--mauve); */
-/* box-shadow: var(--lm-header-shadow); */
+  /* background-color: var(--mauve); */
+  /* box-shadow: var(--lm-header-shadow); */
 /* } */
 
 /* .headerArea::after {
@@ -48,8 +48,8 @@
 } */
 
 /* .headerArea nav ul li { */
-/* float: right; */
-/* list-style-type: none;
+  /* float: right; */
+  /* list-style-type: none;
   display: inline-block;
   overflow: hidden;
   margin: 0;
@@ -57,7 +57,7 @@
   margin-left: 30px;
   font-size: 1.3rem;
   font-weight: 800; */
-/* display: inline-block;
+  /* display: inline-block;
   list-style-type: none;
   overflow: hidden;
   margin: 0;
@@ -71,39 +71,33 @@
   color: var(--fourth-color);
 } */
 
+
 /* My styling code ---------------------------------------- */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
+@media only screen and (max-width: 600px) {}
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  body,
-  html {
+  body, html {
     margin: 0;
   }
 
-  .headerArea {
-    /* overflow: hidden;
+  header {
+    overflow: hidden;
     position: fixed;
     width: 100%;
-    top: 0; */
-    overflow: hidden;
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
-    width: 100%;
-    z-index: 1;
-    background-color: var(--mauve);
+    background-color: var(--mauve); 
     box-shadow: var(--lm-header-shadow);
   }
 
-  .headerContent,
-  nav ul {
+  .headerContent, nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
   }
 
   .logo {
@@ -113,7 +107,7 @@
     overflow: hidden;
   }
 
-  .headerContent nav {
+  .headerContent nav{
     width: 32rem;
     margin-right: 20px;
   }
@@ -126,12 +120,11 @@
     color: var(--fourth-color);
     text-decoration: none;
     font-weight: bolder;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .headerContent ul li a:hover {
     color: var(--deep-champagne);
-    text-shadow: var(--text-shadow);
   }
 
   .searchField {
@@ -145,18 +138,20 @@
     border-radius: 10px;
     border: 2px solid var(--deep-champagne);
     outline: none;
-    line-height: 2;
+    line-height: 2; 
     padding: 0 7%;
     font-size: 1.2rem;
     text-align: center;
     width: 52%;
+    box-shadow: var(--dm-shadow);
   }
-
+  
   .searchDivider {
     margin: 1.5% 0;
     width: 41%;
     height: 2px;
     background-color: var(--deep-champagne);
+   
   }
 
   .searchField button {
@@ -167,37 +162,61 @@
     outline: none;
     padding: 15px 0;
     border-radius: 10px;
+    cursor: pointer;
   }
 
-  /* main div:first-child div:nth-child(2) button {
-    cursor: pointer;  
-  } */
+  .searchField button:hover {
+      box-shadow: var(--dm-shadow);
+  }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 882px and up) */
 @media only screen and (min-width: 882px) {
+
+  .logo{
+    width: 20%;
+  }
+
+  .headerContent ul li a {
+    font-size: 2.2vw;
+  }
+  
 }
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .headerContent nav {
-    margin-right: 20px;
+
+
+}
+
+
+/* Extra large devices (large laptops and desktops, 1300px and up) */
+@media only screen and (min-width: 1400px) {
+  .headerContent nav{
+    margin-right: 50px;
   }
 
-  .logo {
-    width: 20%;
+  .headerContent nav {
+    width: 40rem;
+  }  
+
+  .logo{
+    margin-left: 50px;
   }
 
   main div:first-child div:nth-child(2) input {
     font-size: 1.5rem;
     line-height: 3.2;
   }
-}
 
-/* Extra large devices (large laptops and desktops, 1300px and up) */
-@media only screen and (min-width: 1400px) {
+  .searchField button {
+    font-size: 1.3rem;
+  }
+
+
 }

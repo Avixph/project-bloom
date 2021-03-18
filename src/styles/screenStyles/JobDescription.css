@@ -16,3 +16,115 @@
   --search-shadow: inset 6px 6px 9px #6e6c68ab, inset -6px -6px 60px #fff;
   --text-shadow: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
 }
+
+/* My styling code ---------------------------------------- */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  .jobDetail {
+    margin: 13% 5% 6rem 5%;
+    background-color: var(--deep-champagne);
+    padding: 4%;
+    border-radius: 10px;
+    color: var(--rich-black-fogar-39)
+  }
+
+  .jobDetail div:nth-child(1) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .jobDescripTitle {
+    width: 60%;
+    margin-right: 3%;
+    text-align: center;
+    color: var(--russian-violet);
+  }
+
+  .logoFrameDescrip {
+    width: 24%;
+  }
+
+  .logoFrameDescrip img {
+    width: 50%;
+  }
+
+  .companyName {
+    text-align: center;
+  }
+
+  .jobDecripItems {
+    display: flex;
+    justify-content: center;
+  }
+
+  .jobDecripItems p {
+    margin: 0;
+    width: 33%;
+    text-align: center;
+  }
+
+  .jobDescripContent {
+    margin-top: 4%;
+  }
+
+  .applyContainer {
+    text-align: center; 
+    margin-top: 4%;
+  }
+
+  .applyButton button {
+    color: var(--deep-champagne);
+    background-color: var(--russian-violet);
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    width: 11%;
+    cursor: pointer;
+   
+  }
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 882px and up) */
+@media only screen and (min-width: 882px) {
+  
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  
+
+  .jobDescripTitle {
+    font-size: 3vw;
+  }
+
+  .companyName {
+    font-size: 2.2vw;
+  }
+
+ 
+
+}
+
+
+/* Extra large devices (large laptops and desktops, 1300px and up) */
+@media only screen and (min-width: 1400px) {
+  .applyButton button {
+    font-size: 1.1rem;
+  }
+}
+

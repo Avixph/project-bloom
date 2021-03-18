@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap"); */
 
 :root {
   --isabelline: #f9f6f2;
@@ -17,15 +17,12 @@
   --text-shadow: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
 }
 
-.headerArea {
+/* .headerArea {
   overflow: hidden;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    background-color: var(--mauve);
-    box-shadow: var(--lm-header-shadow);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: var(--mauve);
 }
 
 .logo {
@@ -34,4 +31,8 @@
   margin-left: 20px;
   overflow: hidden;
   float: left;
+} */
+
+body {
+  background-color: var(--mauve);
 }
