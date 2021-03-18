@@ -1,31 +1,27 @@
 import "../styles/componentStyles/Header.css";
 import { NavLink } from "react-router-dom";
 import bloomLogoLight from "../images/logos/project-bloom-logo-light.svg";
-import bloomLogoDark from "../images/logos/project-bloom-logo-dark.svg";
+// import bloomLogoDark from "../images/logos/project-bloom-logo-dark.svg";
 import LightsOut from "../components/LightsOut";
 
-export default function Header({ lightSwitch, dark }) {
+export default function Header({ lightSwitch }) {
   return (
-    <header className={dark ? "headerArea" : "darkHeaderArea"}>
+    <header className="headerArea">
       <div className="headerContent">
-        <img
-          src={dark ? bloomLogoDark : bloomLogoLight}
-          alt=""
-          className="logo"
-        />
+        <img src={bloomLogoLight} alt="" className="logo" />
         <nav>
           <ul>
-            <li className={dark ? "" : "darkLi"}>
+            <li>
               <NavLink exact to={"/home"}>
                 Home
               </NavLink>
             </li>
-            <li className={dark ? "" : "darkLi"}>
+            <li>
               <NavLink exact to={"/search"}>
                 Search Jobs
               </NavLink>
             </li>
-            <li className={dark ? "" : "darkLi"}>
+            <li>
               <NavLink exact to={"/about"}>
                 About
               </NavLink>
