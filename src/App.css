@@ -19,5 +19,18 @@
 
 .App {
   text-align: center;
+  background-color: var(--russian-violet);
+}
+
+.App-light {
+  text-align: center;
   background-color: var(--mauve);
+}
+
+.homeHeading {
+  color: var(--isabelline);
+}
+
+.darkJobBlurb {
+  background-color: var(--platinum);
 }
