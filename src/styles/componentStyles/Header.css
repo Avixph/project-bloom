@@ -80,11 +80,20 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
+  html {
+    box-sizing: border-box; 
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit; 
+  }
+
   body, html {
     margin: 0;
   }
 
-  header {
+  .headerArea {
     overflow: hidden;
     position: fixed;
     width: 100%;
@@ -143,7 +152,6 @@
     font-size: 1.2rem;
     text-align: center;
     width: 52%;
-    box-shadow: var(--dm-shadow);
   }
   
   .searchDivider {
@@ -165,9 +173,9 @@
     cursor: pointer;
   }
 
-  .searchField button:hover {
-      box-shadow: var(--dm-shadow);
-  }
+  /* main div:first-child div:nth-child(2) button {
+    cursor: pointer;  
+  } */
 
 }
 
