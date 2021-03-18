@@ -4,7 +4,7 @@ import bloomLogoLight from "../images/logos/project-bloom-logo-light.svg";
 // import bloomLogoDark from "../images/logos/project-bloom-logo-dark.svg";
 import LightsOut from "../components/LightsOut";
 
-export default function Header() {
+export default function Header({ lightSwitch }) {
   return (
     <header className="headerArea">
       <div className="headerContent">
@@ -27,7 +27,7 @@ export default function Header() {
               </NavLink>
             </li>
             <li>
-              <LightsOut />
+              <LightsOut lightSwitch={lightSwitch} />
             </li>
           </ul>
         </nav>

@@ -5,9 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchRandom } from "../redux/randomJobSlice";
 import JobPost from "./JobPost";
 
-export default function RandomJobList() {
-  // const [arr, setArr] = useState([])
-
+export default function RandomJobList({ light }) {
   const RandomJobRequest = useSelector((state) => {
     return state.randoms.randomJobs;
   });
@@ -26,14 +24,17 @@ export default function RandomJobList() {
 
   const renderRandomList = () => {
     return RandomJobRequest.map((jobInfo, index) => {
-      return <JobPost {...jobInfo} key={index} />;
+      return <JobPost light={light} {...jobInfo} key={index} />;
     });
   };
 
   return (
-    <div className="randomList">
-      <h2 className="pageTitle">Developer Jobs to Consider</h2>
+
+    <div className="randomContainer">
+      <h1 className={light ? "pageTitle" : "homeHeading"}>Remote Jobs Available</h1>
+     
       <button onClick={handleReload}>Reload</button>
+
       <br />
       <section>{renderRandomList()}</section>
     </div>

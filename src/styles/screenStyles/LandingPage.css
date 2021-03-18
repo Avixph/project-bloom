@@ -19,12 +19,15 @@
 
 
 
+
+
 /* My styling code ---------------------------------------- */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .landingBanner {
     width: 100%;
+
   
   }
 
@@ -36,22 +39,25 @@
   
 
   
+
   .landingHeaderArea {
     box-shadow: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   
   body {
     background-color: var(--mauve);
   }
   
+
   .lightsOut-toggle {
     margin-right: 20px;
   }
 
-  
+
   .bannerParent {
     display: flex;
     align-items: center;
@@ -61,9 +67,11 @@
   }
 
 
+
   .landingBanner {
     width: 100%;
   
+
   }
 
   .landingQuote {
@@ -115,12 +123,14 @@
   .landingBanner {
     height: 783px;
   }
+
 }
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   
+
 }
 
 

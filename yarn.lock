@@ -1618,6 +1618,7 @@
     loader-utils "^2.0.0"
 
 "@tailwindcss/postcss7-compat@^2.0.3", "tailwindcss@yarn:@tailwindcss/postcss7-compat":
+  name tailwindcss
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@tailwindcss/postcss7-compat/-/postcss7-compat-2.0.3.tgz#d212aa672eb5aa789fbf1ac253000707603d7676"
   integrity sha512-R43aiSzwlybDMhDld8vkSIKPSLXxbbmotZ+I2GIrX+IzFNy9JAByC7Ncf9A81Dg0JLBWHY5m769lBbBnJCF8cw==

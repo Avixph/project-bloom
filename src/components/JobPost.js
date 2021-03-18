@@ -2,9 +2,12 @@ import { unwrapResult } from "@reduxjs/toolkit";
 import { NavLink } from "react-router-dom";
 import noImage from "../images/logos/no-image-logo.svg";
 
-export default function RandomJobPost(props) {
+
+export default function JobPost(props) {
+  console.log(props);
+
   return (
-    <div className="jobBlurb">
+    <div className={props.dark ? "jobBlurb" : "darkJobBlurb"}>
       <div className="logoFrame">
         <img
           src={props.company_logo_url ? props.company_logo_url : noImage}
