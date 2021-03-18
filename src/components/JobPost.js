@@ -2,7 +2,6 @@ import { unwrapResult } from "@reduxjs/toolkit";
 import { NavLink } from "react-router-dom";
 import noImage from "../images/logos/no-image-logo.svg";
 
-
 export default function JobPost(props) {
   console.log(props);
 
@@ -17,10 +16,6 @@ export default function JobPost(props) {
       </div>
       <h2 className="jobTitle">{props.title}</h2>
       <h3 className="companyName">{props.company_name}</h3>
-      {/* <ul className="jobItems">
-        <li className="jobRequirement">{props.candidate_required_location}</li>
-        <li className="jobHours">{props.job_type}</li>
-      </ul> */}
       <NavLink
         to={{
           pathname: "/jobDescription",
@@ -39,7 +34,10 @@ export default function JobPost(props) {
             : {},
         }}
       >
-        <button type="button" className="detailsBttn">
+        <button
+          type="button"
+          className={props.dark ? "detailsBttn" : "darkDetailsBttn"}
+        >
           Details
         </button>
       </NavLink>

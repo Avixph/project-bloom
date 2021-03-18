@@ -8,7 +8,7 @@ import loadingSpinner from "../images/loading/spinner.gif";
 //drop down goes here
 //step 1 make drop down without API
 
-export default function SearchJobList() {
+export default function SearchJobList({ dark }) {
   const jobsRequest = useSelector((state) => state.searches.searchJobs);
   const status = useSelector((state) => state.searches.status);
 
@@ -30,7 +30,7 @@ export default function SearchJobList() {
       return <h2>Complete search field.</h2>;
     } else if (status === "success") {
       return jobsRequest.slice(0, nextJobPosts).map((jobinfo, index) => {
-        return <JobPost {...jobinfo} key={index} />;
+        return <JobPost dark={dark} {...jobinfo} key={index} />;
       });
     } else {
       <h2>Error: Please Try Again! </h2>;
@@ -49,12 +49,8 @@ export default function SearchJobList() {
 
   return (
     <div>
-      <div className="jobList">
-        {renderList()}
-      </div>
-      <div className="button">
-        {renderButton()}
-      </div>
+      <div className="jobList">{renderList()}</div>
+      <div className="button">{renderButton()}</div>
     </div>
   ); //bc u can only ever return 1 div , need to wrap it
 }

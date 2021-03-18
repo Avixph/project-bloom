@@ -1,13 +1,14 @@
+import "../styles/screenStyles/HomePage.css";
 import Header from "../components/Header";
 import RandomJobList from "../components/RandomJobList";
 import Footer from "../components/Footer";
 
-export default function HomePage({ lightSwitch, light }) {
+export default function HomePage({ lightSwitch, dark }) {
   return (
-    <div className="home">
-      <Header lightSwitch={lightSwitch} />
-      <RandomJobList dark={light} />
-      <Footer />
+    <div className={dark ? "home" : "darkHome"}>
+      <Header lightSwitch={lightSwitch} dark={dark} />
+      <RandomJobList dark={dark} />
+      <Footer dark={dark} />
     </div>
   );
 }

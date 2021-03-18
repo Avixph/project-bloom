@@ -13,6 +13,7 @@
   --body-font: "Lato", sans-serif;
   --lm-shadow: 6px 6px 12px #745192, -6px -6px 12px #8059a2;
   --lm-header-shadow: 6px 6px 12px #74519232, -6px -6px 12px #8059a2;
+  --dm-header-shadow: 6px 6px 12px #ceb2e633, -6px -6px 12px #e4c4fe5d;
   --dm-shadow: 6px 6px 12px #ceb2e6, -6px -6px 12px #e4c4fe;
   --search-shadow: inset 6px 6px 9px #6e6c68ab, inset -6px -6px 60px #fff;
   --text-shadow: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
@@ -20,13 +21,13 @@
 
 /* .headerArea {
   /* height: 85px; */
-  /* overflow: hidden;
+/* overflow: hidden;
   position: -webkit-sticky;
   position: sticky;
   top: -16px;
   z-index: 1; */
-  /* background-color: var(--mauve); */
-  /* box-shadow: var(--lm-header-shadow); */
+/* background-color: var(--mauve); */
+/* box-shadow: var(--lm-header-shadow); */
 /* } */
 
 /* .headerArea::after {
@@ -48,8 +49,8 @@
 } */
 
 /* .headerArea nav ul li { */
-  /* float: right; */
-  /* list-style-type: none;
+/* float: right; */
+/* list-style-type: none;
   display: inline-block;
   overflow: hidden;
   margin: 0;
@@ -57,7 +58,7 @@
   margin-left: 30px;
   font-size: 1.3rem;
   font-weight: 800; */
-  /* display: inline-block;
+/* display: inline-block;
   list-style-type: none;
   overflow: hidden;
   margin: 0;
@@ -71,42 +72,49 @@
   color: var(--fourth-color);
 } */
 
-
 /* My styling code ---------------------------------------- */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
-
+@media only screen and (max-width: 600px) {
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
   html {
-    box-sizing: border-box; 
-  }
-  
-  *, *::before, *::after {
-    box-sizing: inherit; 
+    box-sizing: border-box;
   }
 
-  body, html {
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body,
+  html {
     margin: 0;
   }
 
   .headerArea {
     overflow: hidden;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: var(--russian-violet);
+  }
+  .darkHeaderArea {
+    overflow: hidden;
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: var(--mauve); 
-    box-shadow: var(--lm-header-shadow);
+    background-color: var(--mauve);
   }
 
-  .headerContent, nav ul {
+  .headerContent,
+  nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
   }
 
   .logo {
@@ -116,7 +124,7 @@
     overflow: hidden;
   }
 
-  .headerContent nav{
+  .headerContent nav {
     width: 32rem;
     margin-right: 20px;
   }
@@ -126,55 +134,55 @@
   }
 
   .headerContent ul li a {
-    color: var(--fourth-color);
+    color: var(--platinum);
+    text-decoration: none;
+    /* font-weight: bolder; */
+    font-family: Roboto;
+    /* font-size: 1.2rem; */
+  }
+  .headerContent ul .darkLi a {
+    color: var(--rich-black-fogar-39);
     text-decoration: none;
     font-weight: bolder;
+    font-family: Roboto;
     font-size: 1.3rem;
   }
 
   .headerContent ul li a:hover {
     color: var(--deep-champagne);
   }
-
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 882px and up) */
 @media only screen and (min-width: 882px) {
-
-  .logo{
+  .logo {
     width: 20%;
   }
 
   .headerContent ul li a {
     font-size: 2.2vw;
   }
-  
 }
-
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
-
 }
-
 
 /* Extra large devices (large laptops and desktops, 1300px and up) */
 @media only screen and (min-width: 1400px) {
-  .headerContent nav{
+  .headerContent nav {
     margin-right: 50px;
   }
 
   .headerContent nav {
     width: 40rem;
-  }  
-
-  .logo{
-    margin-left: 50px;
   }
 
-
+  .logo {
+    margin-left: 50px;
+  }
 }

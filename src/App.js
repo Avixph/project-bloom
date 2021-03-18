@@ -8,30 +8,30 @@ import AboutPage from "./screens/AboutPage";
 import FullJobDescription from "./screens/FullJobDescription";
 
 function App() {
-  const [light, setLight] = useState(false);
+  const [dark, setDark] = useState(false);
 
   const handleLights = () => {
-    setLight((dark) => !dark);
+    setDark((light) => !light);
   };
 
   return (
-    <div className={light ? "App" : "App-dark"}>
+    <div className={dark ? "App" : "App-dark"}>
       <main>
         <Switch>
           <Route exact path="/">
-            <LandingPage lightSwitch={handleLights} light={light} />
+            <LandingPage lightSwitch={handleLights} dark={dark} />
           </Route>
           <Route exact path="/home">
-            <HomePage lightSwitch={handleLights} light={light} />
+            <HomePage lightSwitch={handleLights} dark={dark} />
           </Route>
           <Route exact path="/search">
-            <SearchPage lightSwitch={handleLights} light={light} />
+            <SearchPage lightSwitch={handleLights} dark={dark} />
           </Route>
           <Route exact path="/about">
-            <AboutPage lightSwitch={handleLights} light={light} />
+            <AboutPage lightSwitch={handleLights} dark={dark} />
           </Route>
           <Route exact path="/jobDescription">
-            <FullJobDescription lightSwitch={handleLights} light={light} />
+            <FullJobDescription />
           </Route>
         </Switch>
       </main>
