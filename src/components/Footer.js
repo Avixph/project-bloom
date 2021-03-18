@@ -1,7 +1,7 @@
 import "../styles/componentStyles/Footer.css";
-export default function Footer({ dark }) {
+export default function Footer() {
   return (
-    <footer className={dark ? "footerArea" : "darkFooterArea"}>
+    <footer className="footerArea">
       <h2 className="footerDetail">© 2021</h2>
     </footer>
   );

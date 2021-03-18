@@ -3,13 +3,13 @@ import Footer from "../components/Footer";
 import SearchField from "../components/SearchField";
 import SearchJobList from "../components/SearchJobList";
 
-export default function SearchPage({ lightSwitch, dark }) {
+export default function SearchPage() {
   return (
     <div className="search">
-      <Header lightSwitch={lightSwitch} dark={dark} />
-      <SearchField dark={dark} />
-      <SearchJobList dark={dark} />
-      <Footer dark={dark} />
+      <Header />
+      <SearchField />
+      <SearchJobList />
+      <Footer />
     </div>
   );
 }
