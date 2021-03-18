@@ -1,4 +1,5 @@
 //Displaying of local job api data
+import "../styles/componentStyles/RandomJobList.css";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchRandom } from "../redux/randomJobSlice";
@@ -28,11 +29,12 @@ export default function RandomJobList({ light }) {
   };
 
   return (
+
     <div className="randomContainer">
-      <h1 className={light ? "" : "homeHeading"}>Remote Jobs Available</h1>
-      <button onClick={handleReload} className="reloadBttn">
-        Reload
-      </button>
+      <h1 className={light ? "pageTitle" : "homeHeading"}>Remote Jobs Available</h1>
+     
+      <button onClick={handleReload}>Reload</button>
+
       <br />
       <section>{renderRandomList()}</section>
     </div>

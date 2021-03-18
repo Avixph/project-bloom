@@ -2,8 +2,10 @@ import { unwrapResult } from "@reduxjs/toolkit";
 import { NavLink } from "react-router-dom";
 import noImage from "../images/logos/no-image-logo.svg";
 
+
 export default function JobPost(props) {
   console.log(props);
+
   return (
     <div className={props.dark ? "jobBlurb" : "darkJobBlurb"}>
       <div className="logoFrame">
@@ -38,7 +40,7 @@ export default function JobPost(props) {
         }}
       >
         <button type="button" className="detailsBttn">
-          View <br /> Details
+          Details
         </button>
       </NavLink>
     </div>
