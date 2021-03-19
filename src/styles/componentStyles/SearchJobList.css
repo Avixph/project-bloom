@@ -13,20 +13,20 @@
   --body-font: "Lato", sans-serif;
   --lm-shadow: 6px 6px 12px #745192, -6px -6px 12px #8059a2;
   --dm-shadow: 6px 6px 12px #ceb2e6, -6px -6px 12px #e4c4fe;
-  --lm-header-shadow: 6px 6px 12px #74519232, -6px -6px 12px #8059a2;
-  --dm-header-shadow: 6px 6px 12px #ceb2e635, -6px -6px 12px #e4c4fe76;
   --search-shadow: inset 6px 6px 9px #6e6c68ab, inset -6px -6px 60px #fff;
   --text-shadow: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
 }
 
+
 /* below is my css code-------------------- */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
+@media only screen and (max-width: 600px) {}
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  
   .jobList {
     display: flex;
     text-align: center;
@@ -35,21 +35,22 @@
     justify-content: space-around;
   }
 
-  .jobBlurb {
-    width: 35%;
-    margin-bottom: 2%;
-    background-color: var(--platinum);
-    padding: 2% 2%;
-    border-radius: 20px;
-    box-shadow: var(--dm-header-shadow);
-  }
-  .darkJobBlurb {
+  .jobBlurb{
     width: 35%;
     margin-bottom: 2%;
     background-color: var(--deep-champagne);
     padding: 2% 2%;
     border-radius: 20px;
-    box-shadow: var(--lm-header-shadow);
+    box-shadow: var(--platinum);
+  }
+
+  .darkJobBlurb{
+    width: 35%;
+    margin-bottom: 2%;
+    background-color: var(--platinum);
+    padding: 2% 2%;
+    border-radius: 20px;
+    /* box-shadow: var(--lm-header-shadow); */
   }
 
   .button {
@@ -57,9 +58,31 @@
     text-align: center;
   }
 
-  /* .button button,
-  .jobBlurb button,
-  .darkJobBlurb .darkBttn,
+  .darkButton {
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  .button button, .jobBlurb button {
+    color: var(--deep-champagne);
+    background-color: var(--russian-violet);
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .darkButton button {
+    color: var(--rich-black-fogar-39);
+    background-color: var(--platinum);
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
   .darkJobBlurb button {
     color: var(--deep-champagne);
     background-color: var(--russian-violet);
@@ -68,45 +91,25 @@
     padding: 15px 0;
     border-radius: 10px;
     cursor: pointer;
-  } */
-  .button button,
-  .jobBlurb button {
-    color: var(--deep-champagne);
-    background-color: var(--russian-violet);
-    border: none;
-    outline: none;
-    padding: 15px 0;
-    border-radius: 10px;
-    cursor: pointer;
   }
 
-  .darkDetailsBttn {
-    color: var(--deep-champagne);
-    background-color: var(--russian-violet);
-    border: none;
-    outline: none;
-    padding: 15px 0;
-    border-radius: 10px;
-    cursor: pointer;
+  .jobBlurb button{
+    width: 30%;
   }
 
-  .jobBlurb button {
+  .darkJobBlurb button{
     width: 30%;
-  }
-  .darkBttn {
-    width: 30%;
-  }
-  .darkDetailsBttn {
-    width: 30%;
+
   }
 
   .button button {
     width: 15%;
   }
-  .darkDetailsBttn {
+
+  .darkButton button {
     width: 15%;
   }
-
+  
   .jobItems {
     display: flex;
     justify-content: space-around;
@@ -127,44 +130,47 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-  }
+  }  
+
+
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 882px and up) */
 @media only screen and (min-width: 882px) {
   .jobBlurb {
     width: 41%;
   }
+
   .darkJobBlurb {
     width: 41%;
   }
+
 }
 
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
+
 
 /* Extra large devices (large laptops and desktops, 1300px and up) */
 @media only screen and (min-width: 1400px) {
+
   .jobBlurb {
     width: 40%;
   }
+
   .darkJobBlurb {
     width: 40%;
   }
 
-  .jobBlurb button {
-    font-size: 1.1rem;
-  }
-  .darkDetailsBttn {
-    font-size: 1.1rem;
+  .jobJobBlurb button{
+   font-size: 1.1rem;
+
   }
 
-  .darkBttn {
-    font-size: 1.1rem;
-  }
+
 }
