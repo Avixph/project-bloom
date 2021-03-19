@@ -2,9 +2,11 @@
 import { NavLink } from "react-router-dom";
 import noImage from "../images/logos/no-image-logo.svg";
 
-export default function RandomJobPost(props) {
+
+export default function JobPost(props) {
 
   console.log(props.dark)
+
 
   return (
     <div className={props.dark ? "jobBlurb" : "darkJobBlurb"}>

@@ -32,6 +32,7 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .pageTitle{
+
     margin-top: 13%;
     margin-left: 5%;
     font-size: 3.8vw;
@@ -40,6 +41,7 @@
   } 
 
   .darkPageTitle{
+
     margin-top: 13%;
     margin-left: 5%;
     font-size: 3.8vw;
@@ -59,6 +61,7 @@
     width: 11%;
   }
   
+
   .darkRandomList:nth-child(2) button:nth-child(2){
     color: var(--rich-black-fogar-39);
     background-color: var(--mauve);
@@ -70,6 +73,7 @@
     cursor: pointer;
     width: 11%;
   }
+
 
   .randomList section {
     display: flex;
@@ -109,10 +113,12 @@
 @media only screen and (min-width: 1400px) {
 
   .randomList:nth-child(2) button:nth-child(2){
+
     font-size: 1.3rem;
   }
 
   .darkRandomList:nth-child(2) button:nth-child(2){
+
     font-size: 1.3rem;
   }
 
@@ -121,4 +127,6 @@
   }
 
 
+
 }
+

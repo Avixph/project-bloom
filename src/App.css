@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
 
 :root {
   --isabelline: #f9f6f2;
@@ -19,6 +19,7 @@
 
 
 
+
 .App {
   background-color: var(--mauve);
 } 
@@ -26,3 +27,15 @@
 .App-dark {
   background-color: var(--russian-violet);
 } 
+
+
+.homeHeading {
+  color: var(--isabelline);
+}
+
+.darkJobBlurb {
+  background-color: var(--platinum);
+}
+
+} */
+

@@ -48,6 +48,7 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
+
   .footerDetail {
     color: var(--fourth-color);
   }
@@ -58,11 +59,14 @@
 
   .footerArea {
     text-align: center; 
+
     overflow: hidden;
     position: fixed;
     width: 100%;
     bottom: 0;
+
     background-color: var(--mauve); 
+
     border-top: var(--deep-champagne) solid 2px;
   }
 
