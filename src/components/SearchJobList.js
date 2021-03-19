@@ -9,9 +9,7 @@ import darkLoadingSpinner from "../images/loading/darkSpinner.gif";
 //drop down goes here
 //step 1 make drop down without API
 
-
-export default function SearchJobList({dark}) {
-
+export default function SearchJobList({ dark }) {
   const jobsRequest = useSelector((state) => state.searches.searchJobs);
   const status = useSelector((state) => state.searches.status);
 
@@ -33,9 +31,7 @@ export default function SearchJobList({dark}) {
       return <h2>Complete search field.</h2>;
     } else if (status === "success") {
       return jobsRequest.slice(0, nextJobPosts).map((jobinfo, index) => {
-
         return <JobPost {...jobinfo} key={index} dark={dark} />;
-
       });
     } else {
       <h2>Error: Please Try Again! </h2>;
@@ -54,14 +50,9 @@ export default function SearchJobList({dark}) {
 
   return (
     <div>
-      <div className="jobList">
-        {renderList()}
-      </div>
+      <div className="jobList">{renderList()}</div>
 
-      <div className={dark ? "button" : "darkButton"}>
-
-        {renderButton()}
-      </div>
+      <div className={dark ? "button" : "darkButton"}>{renderButton()}</div>
     </div>
   ); //bc u can only ever return 1 div , need to wrap it
 }

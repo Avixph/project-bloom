@@ -8,7 +8,6 @@ import JobPost from "./JobPost";
 export default function RandomJobList({ dark }) {
   // const [arr, setArr] = useState([])
 
-
   const RandomJobRequest = useSelector((state) => {
     return state.randoms.randomJobs;
   });
@@ -25,16 +24,15 @@ export default function RandomJobList({ dark }) {
 
   const renderRandomList = () => {
     return RandomJobRequest.map((jobInfo, index) => {
-
-      return <JobPost {...jobInfo} key={index} dark={ dark } />;
-
+      return <JobPost {...jobInfo} key={index} dark={dark} />;
     });
   };
 
   return (
-
-    <div className={dark? "randomList" : "darkRandomList"}>
-      <h2 className={dark ? "pageTitle" : "darkPageTitle"}>Remote Jobs Available</h2>
+    <div className={dark ? "randomList" : "darkRandomList"}>
+      <h2 className={dark ? "pageTitle" : "darkPageTitle"}>
+        Remote Jobs Available
+      </h2>
       <button onClick={handleReload}>Reload</button>
 
       <br />
