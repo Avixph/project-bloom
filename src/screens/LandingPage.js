@@ -1,40 +1,39 @@
 import "../styles/screenStyles/LandingPage.css";
 import bloomLogoLight from "../images/logos/project-bloom-logo-light.svg";
-// import bloomLogoDark from "../images/logos/project-bloom-logo-dark.svg";
+import bloomLogoDark from "../images/logos/project-bloom-logo-dark.svg";
 import landingbannerlight from "../images/design_elements/project-bloom-landing-banner-light.svg";
-// import landingbannerDark from "../images/design_elements/project-bloom-landing-banner-dark.svg";
+import landingbannerDark from "../images/design_elements/project-bloom-landing-banner-dark.svg";
 import { NavLink } from "react-router-dom";
 import LightsOut from "../components/LightsOut";
 
-export default function LandingPage() {
+export default function LandingPage({ lightSwitch, dark }) {
+  
   return (
-    <div className="landing h-screen">
+    <div className="">
       <header className="landingHeaderArea">
-        <img src={bloomLogoLight} alt="" className="logo" />
-        <LightsOut />
+        <img src={dark ? bloomLogoLight : bloomLogoDark} alt="" className="logo" />
+        <LightsOut lightSwitch={lightSwitch} />
       </header>
       <div
-        // className="flex items-center justify-center "
         className="bannerParent"
       >
-        <div className="w-3/4">
+        <div>
           <img
-            src={landingbannerlight}
+            src={dark ? landingbannerlight : landingbannerDark}
             alt=""
             className="landingBanner"
-            // style={{ width: "55%" }}
+            
           />
         </div>
-        <div className="w-1/4">
+        <div>
           <h2
-            // className="text-russian_violet"
-            className="landingQuote"
+            className={dark ? "landingQuote" : "darkLandingQuote"}
           >
             “Helping you blossom into your next career”
           </h2>
           <div className="buttonParent">
             <NavLink to={"/home"}>
-              <button type="button" className="enterBttn">
+              <button type="button" className={dark ? "enterBttn" : "darkEnterBttn"}>
                 Enter
               </button>
             </NavLink>
