@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
 :root {
   --isabelline: #f9f6f2;
   --deep-champagne: #ffd085;
@@ -27,4 +27,4 @@
 .darkJobBlurb {
   background-color: var(--platinum);
 }
-} */
+
