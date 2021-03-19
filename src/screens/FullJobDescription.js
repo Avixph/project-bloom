@@ -1,3 +1,4 @@
+import "../styles/screenStyles/JobDescription.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import noImage from "../images/logos/no-image-logo.svg";
@@ -7,32 +8,41 @@ export default function FullJobDescription(props) {
     <div className="FullJobDescription">
       <Header />
       <div className="jobDetail">
-        <img
-          src={props.location.state.logo ? props.location.state.logo : noImage}
-          alt=""
-          className="companyLogo"
-        />
-        <h2 className="jobTitle">{props.location.state.title}</h2>
+        <div className="jobDescriptParent">
+        <h2 className="jobDescripTitle">{props.location.state.title}</h2>
+          
+          <div className="logoFrameDescrip">
+            <img
+              src={props.location.state.logo ? props.location.state.logo : noImage}
+              alt=""
+              className="companyLogo"
+            />
+          </div>
+        </div>
         <h3 className="companyName">{props.location.state.company}</h3>
 
-        <div className="jobItems">
+        <div className="jobDecripItems">
           <p className="JobCategory">
             Category: {props.location.state.category}
           </p>
-          <p className="jobRequirement">
-            Hirring: {props.location.state.requirement}
+          <p className="jobReqmnt">
+            Hiring: {props.location.state.requirement}
           </p>
           <p className="jobHours">Job Hours: {props.location.state.hours}</p>
         </div>
 
         <div
+          className ="jobDescripContent"
           dangerouslySetInnerHTML={{ __html: props.location.state.description }}
         />
-        <a href={props.location.state.apply} target="_blank" rel="noreferrer">
-          <button>apply</button>
-        </a>
+        <div className="applyContainer">
+          <a className="applyButton" href={props.location.state.apply} target="_blank" rel="noreferrer">
+            <button>apply</button>
+          </a>
+        </div>
       </div>
       <Footer />
     </div>
   );
 }
+

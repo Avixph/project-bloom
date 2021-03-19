@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import LandingPage from "./screens/LandingPage";
 import HomePage from "./screens/HomePage";
@@ -7,15 +8,39 @@ import AboutPage from "./screens/AboutPage";
 import FullJobDescription from "./screens/FullJobDescription";
 
 function App() {
+  const [dark, setDark] = useState("false");
+
+  const handleLights = () => {
+    setDark((light) => !light); //??
+  };
+
+  if (!dark) {
+    document.body.classList.add("App-dark");
+  } else {
+    document.body.classList.remove("App-dark");
+  }
+
+  console.log(dark);
+
   return (
-    <div className={"App"}>
+    <div className={dark ? "App" : "App-dark"}>
       <main>
         <Switch>
-          <Route exact path="/" component={LandingPage} />
-          <Route exact path="/home" component={HomePage} />
-          <Route exact path="/search" component={SearchPage} />
-          <Route exact path="/about" component={AboutPage} />
-          <Route exact path="/jobDescription" component={FullJobDescription} />
+          <Route exact path="/">
+            <LandingPage lightSwitch={handleLights} dark={dark} />
+          </Route>
+          <Route exact path="/home">
+            <HomePage lightSwitch={handleLights} dark={dark} />
+          </Route>
+          <Route exact path="/search">
+            <SearchPage lightSwitch={handleLights} dark={dark} />
+          </Route>
+          <Route exact path="/about">
+            <AboutPage lightSwitch={handleLights} dark={dark} />
+          </Route>
+          <Route exact path="/jobDescription">
+            <FullJobDescription lightSwitch={handleLights} dark={dark} />
+          </Route>
         </Switch>
       </main>
     </div>

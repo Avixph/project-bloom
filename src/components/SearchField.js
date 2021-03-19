@@ -1,13 +1,10 @@
 // searching input + button
 //using Redux react toolkit and slice
-//input for user
-
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-//(Below)import Thunk
 import { fetchSearch } from "../redux/searchJobSlice";
 
-export default function SearchField() {
+export default function SearchField({ dark }) {
   const dispatch = useDispatch();
 
   const [search, setSearch] = useState("");
@@ -25,14 +22,14 @@ export default function SearchField() {
   };
 
   return (
-    <div>
+    <div className={dark ? "searchField" : "darkSearchField"}>
       <input
         type="Search"
         placeholder="Search for Jobs"
         value={search}
         onChange={handleSearchInput}
       />
-
+      <div className={dark ? "searchDivider" : "darkSearchDivider"}></div>
       <button onClick={handleSearchSubmit}>Search</button>
     </div>
   );

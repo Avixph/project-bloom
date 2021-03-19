@@ -16,3 +16,14 @@
   --search-shadow: inset 6px 6px 9px #6e6c68ab, inset -6px -6px 60px #fff;
   --text-shadow: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
 }
+
+.lightsOut-toggle button {
+  background-color: var(--african-violet);
+  border: none;
+  /* width: 59%; */
+  outline: none;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
