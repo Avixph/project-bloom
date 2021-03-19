@@ -34,7 +34,7 @@
     color: var(--rich-black-fogar-39)
   }
 
-  .jobDetail div:nth-child(1) {
+  .jobDescriptParent {
     display: flex;
     justify-content: flex-end;
     align-items: center;

@@ -1,10 +1,12 @@
-import { unwrapResult } from "@reduxjs/toolkit";
+// import { unwrapResult } from "@reduxjs/toolkit";
 import { NavLink } from "react-router-dom";
 import noImage from "../images/logos/no-image-logo.svg";
 
 
 export default function JobPost(props) {
-  console.log(props);
+
+  console.log(props.dark)
+
 
   return (
     <div className={props.dark ? "jobBlurb" : "darkJobBlurb"}>

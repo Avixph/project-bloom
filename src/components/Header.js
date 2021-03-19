@@ -4,11 +4,14 @@ import bloomLogoLight from "../images/logos/project-bloom-logo-light.svg";
 // import bloomLogoDark from "../images/logos/project-bloom-logo-dark.svg";
 import LightsOut from "../components/LightsOut";
 
-export default function Header({ lightSwitch }) {
+
+export default function Header({ handleLights, dark}) {
+
   return (
-    <header className="headerArea">
-      <div className="headerContent">
-        <img src={bloomLogoLight} alt="" className="logo" />
+    <header className={dark ? "headerArea" : "darkHeaderArea"}>
+      <div className={dark ? "headerContent" : "darkHeaderContent"}>
+        <img src={dark ? bloomLogoLight : bloomLogoDark} alt="" className="logo" />
+
         <nav>
           <ul>
             <li>
@@ -26,8 +29,11 @@ export default function Header({ lightSwitch }) {
                 About
               </NavLink>
             </li>
+            {/* <li>
+              <Hamburger />
+            </li> */}
             <li>
-              <LightsOut lightSwitch={lightSwitch} />
+              <LightsOut lightSwitch={handleLights} />
             </li>
           </ul>
         </nav>

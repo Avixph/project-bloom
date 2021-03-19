@@ -3,12 +3,15 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import JobPost from "./JobPost";
 import loadingSpinner from "../images/loading/spinner.gif";
+import darkLoadingSpinner from "../images/loading/darkSpinner.gif";
 //import DropDownTest from "./DropDownTest";
 
 //drop down goes here
 //step 1 make drop down without API
 
-export default function SearchJobList() {
+
+export default function SearchJobList({dark}) {
+
   const jobsRequest = useSelector((state) => state.searches.searchJobs);
   const status = useSelector((state) => state.searches.status);
 
@@ -25,12 +28,14 @@ export default function SearchJobList() {
       if (nextJobPosts !== 10) {
         setNextJobPosts(10);
       }
-      return <img src={loadingSpinner} alt="" />;
+      return <img src={dark ? loadingSpinner : darkLoadingSpinner} alt="" />;
     } else if (jobsRequest[0] === "Fill in search field") {
       return <h2>Complete search field.</h2>;
     } else if (status === "success") {
       return jobsRequest.slice(0, nextJobPosts).map((jobinfo, index) => {
-        return <JobPost {...jobinfo} key={index} />;
+
+        return <JobPost {...jobinfo} key={index} dark={dark} />;
+
       });
     } else {
       <h2>Error: Please Try Again! </h2>;
@@ -52,7 +57,9 @@ export default function SearchJobList() {
       <div className="jobList">
         {renderList()}
       </div>
-      <div className="button">
+
+      <div className={dark ? "button" : "darkButton"}>
+
         {renderButton()}
       </div>
     </div>

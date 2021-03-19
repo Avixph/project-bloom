@@ -6,10 +6,12 @@ import SearchJobList from "../components/SearchJobList";
 export default function SearchPage() {
   return (
     <div className="search">
-      <Header />
-      <SearchField />
-      <SearchJobList />
-      <Footer />
+
+      <Header handleLights={lightSwitch} dark={dark} />
+      <SearchField  handleLights={lightSwitch} dark={dark} />
+      <SearchJobList  handleLights={lightSwitch} dark={dark} />
+      <Footer  handleLights={lightSwitch} dark={dark} />
+
     </div>
   );
 }
