@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import JobPost from "./JobPost";
 import loadingSpinner from "../images/loading/spinner.gif";
-//import DropDownTest from "./DropDownTest";
 
-//drop down goes here
-//step 1 make drop down without API
+//load more button functionality
 
 export default function SearchJobList() {
   const jobsRequest = useSelector((state) => state.searches.searchJobs);

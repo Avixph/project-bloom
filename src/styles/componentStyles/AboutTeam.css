@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
-
+/* for cards */
 :root {
   --isabelline: #f9f6f2;
   --deep-champagne: #ffd085;
@@ -16,3 +16,34 @@
   --search-shadow: inset 6px 6px 9px #6e6c68ab, inset -6px -6px 60px #fff;
   --text-shadow: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
 }
+
+ .TeamMember { 
+  background-color: var(--royal-purple);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 8%;
+  text-align: center;
+}   
+.TeamMember:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  width: 100%;
+  margin-bottom: auto 200%;
+  background-color: var(--russian-violet);
+  padding: 2% 2%;
+  border-radius: 20px; 
+ 
+}
+ .TeamMemberName {
+   color:#ffd085 ;
+} 
+ .TeamRole {
+  color: #ffd085;
+
+}   
+/* .LinkedIn,  {
+  color: #f9f6f2;
+} */

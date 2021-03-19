@@ -1,5 +1,6 @@
 // searching input + button
 //using Redux react toolkit and slice
+//input for user
 
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
