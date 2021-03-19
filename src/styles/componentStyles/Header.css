@@ -13,108 +13,63 @@
   --body-font: "Lato", sans-serif;
   --lm-shadow: 6px 6px 12px #745192, -6px -6px 12px #8059a2;
   --lm-header-shadow: 6px 6px 12px #74519232, -6px -6px 12px #8059a2;
-  --dm-header-shadow: 6px 6px 12px #ceb2e633, -6px -6px 12px #e4c4fe5d;
   --dm-shadow: 6px 6px 12px #ceb2e6, -6px -6px 12px #e4c4fe;
   --search-shadow: inset 6px 6px 9px #6e6c68ab, inset -6px -6px 60px #fff;
   --text-shadow: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
 }
 
-/* .headerArea {
-  /* height: 85px; */
-/* overflow: hidden;
-  position: -webkit-sticky;
-  position: sticky;
-  top: -16px;
-  z-index: 1; */
-/* background-color: var(--mauve); */
-/* box-shadow: var(--lm-header-shadow); */
-/* } */
-
-/* .headerArea::after {
-  box-shadow: var(--lm-header-shadow);
-} */
-
-/* .logo {
-  padding: 6px 0;
-  margin-left: 20px;
-  overflow: hidden;
-  float: left;
-} */
-
-/* .headerArea nav {
-  justify-content: space-between;
-  margin-top: 10px;
-  margin-right: 20px;
-  padding: 4px 0;
-} */
-
-/* .headerArea nav ul li { */
-/* float: right; */
-/* list-style-type: none;
-  display: inline-block;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  margin-left: 30px;
-  font-size: 1.3rem;
-  font-weight: 800; */
-/* display: inline-block;
-  list-style-type: none;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  margin-left: 30px;
-  font-family: var(--title-font);
-  font-size: 1.3rem;
-  font-weight: 900;
-} */
-/* header nav ul li a {
-  color: var(--fourth-color);
-} */
-
 /* My styling code ---------------------------------------- */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
+@media only screen and (max-width: 600px) {}
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
   html {
-    box-sizing: border-box;
+    box-sizing: border-box; 
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit; 
   }
 
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-
-  body,
-  html {
+  body, html {
     margin: 0;
   }
 
   .headerArea {
     overflow: hidden;
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0;
-    background-color: var(--russian-violet);
+    background-color: var(--mauve); 
+    /* box-shadow: var(--lm-header-shadow); */
   }
+
   .darkHeaderArea {
     overflow: hidden;
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: var(--mauve);
+    background-color: var(--russian-violet); 
+    /* box-shadow: var(--lm-header-shadow); */
   }
+  
 
-  .headerContent,
-  nav ul {
+  .headerContent, nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+  }
+
+  .darkHeaderContent, nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
   }
 
   .logo {
@@ -124,7 +79,12 @@
     overflow: hidden;
   }
 
-  .headerContent nav {
+  .headerContent nav{
+    width: 32rem;
+    margin-right: 20px;
+  }
+
+  .darkHeaderContent nav {
     width: 32rem;
     margin-right: 20px;
   }
@@ -133,56 +93,160 @@
     list-style-type: none;
   }
 
-  .headerContent ul li a {
-    color: var(--platinum);
-    text-decoration: none;
-    /* font-weight: bolder; */
-    font-family: Roboto;
-    /* font-size: 1.2rem; */
+  .darkHeaderContent nav ul {
+    list-style-type: none;
   }
-  .headerContent ul .darkLi a {
-    color: var(--rich-black-fogar-39);
+
+  .headerContent ul li a {
+    color: var(--fourth-color);
     text-decoration: none;
     font-weight: bolder;
-    font-family: Roboto;
+    font-size: 1.3rem;
+  }
+
+  .darkHeaderContent ul li a {
+    color: var(--platinum);
+    text-decoration: none;
+    font-weight: bolder;
     font-size: 1.3rem;
   }
 
   .headerContent ul li a:hover {
     color: var(--deep-champagne);
   }
+
+  .searchField {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+  }
+
+  .darkSearchField {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+  }
+
+  .searchField input {
+    border-radius: 10px;
+    border: 2px solid var(--deep-champagne);
+    outline: none;
+    line-height: 2; 
+    padding: 0 7%;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 52%;
+  }
+  
+  .darkSearchField input {
+    border-radius: 10px;
+    border: 2px solid var(--platinum);
+    outline: none;
+    line-height: 2; 
+    padding: 0 7%;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 52%;
+  }
+
+  .searchDivider {
+    margin: 1.5% 0;
+    width: 41%;
+    height: 2px;
+    background-color: var(--deep-champagne);
+  }
+
+  .darkSearchDivider {
+    margin: 1.5% 0;
+    width: 41%;
+    height: 2px;
+    background-color: var(--platinum);
+  }
+
+  .searchField button {
+    color: var(--deep-champagne);
+    background-color: var(--russian-violet);
+    border: none;
+    width: 16%;
+    outline: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+
+  .darkSearchField button {
+    color: var(--rich-black-fogar-39);
+    background-color: var(--mauve);
+    border: none;
+    width: 16%;
+    outline: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  /* main div:first-child div:nth-child(2) button {
+    cursor: pointer;  
+  } */
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 882px and up) */
 @media only screen and (min-width: 882px) {
-  .logo {
+
+  .logo{
     width: 20%;
   }
 
   .headerContent ul li a {
     font-size: 2.2vw;
   }
+  
+  .darkHeaderContent ul li a {
+    font-size: 2.2vw;
+  }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
+
 
 /* Extra large devices (large laptops and desktops, 1300px and up) */
 @media only screen and (min-width: 1400px) {
-  .headerContent nav {
+  .headerContent nav{
     margin-right: 50px;
-  }
-
-  .headerContent nav {
     width: 40rem;
   }
 
-  .logo {
+  .darkHeaderContent nav{
+    margin-right: 50px;
+    width: 40rem;
+  }
+
+
+
+  .logo{
     margin-left: 50px;
   }
+
+  main div:first-child div:nth-child(2) input {
+    font-size: 1.5rem;
+    line-height: 3.2;
+  }
+
+  .searchField button {
+    font-size: 1.3rem;
+  }
+
+  .darkSearchField button {
+    font-size: 1.3rem;
+  }
+
 }
