@@ -37,50 +37,63 @@
 }
 */
 
+
+
 /* below is my css code-------------------- */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
+@media only screen and (max-width: 600px) {}
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .footerArea {
-    text-align: center;
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    background-color: var(--russian-violet);
-    border-top: var(--platinum) solid 2px;
+
+
+  .footerDetail {
+    color: var(--fourth-color);
+  }
+
+  .darkFooterDetail {
     color: var(--platinum);
-    font-family: Roboto;
   }
-  .darkFooterArea {
-    text-align: center;
+
+  .footerArea {
+    text-align: center; 
+
     overflow: hidden;
     position: fixed;
     width: 100%;
     bottom: 0;
-    background-color: var(--mauve);
+
+    background-color: var(--mauve); 
+
     border-top: var(--deep-champagne) solid 2px;
-    color: var(--rich-black-fogar-39);
-    font-family: Roboto;
   }
+
+  .darkFooterArea {
+      text-align: center; 
+      overflow: hidden;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      background-color: var(--russian-violet); 
+      border-top: var(--platinum) solid 2px;
+  }
+
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 882px and up) */
-@media only screen and (min-width: 882px) {
-}
+@media only screen and (min-width: 882px) {}
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
+
 
 /* Extra large devices (large laptops and desktops, 1300px and up) */
-@media only screen and (min-width: 1400px) {
-}
+@media only screen and (min-width: 1400px) {}
+

@@ -3,12 +3,15 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import JobPost from "./JobPost";
 import loadingSpinner from "../images/loading/spinner.gif";
+import darkLoadingSpinner from "../images/loading/darkSpinner.gif";
 //import DropDownTest from "./DropDownTest";
 
 //drop down goes here
 //step 1 make drop down without API
 
-export default function SearchJobList({ dark }) {
+
+export default function SearchJobList({dark}) {
+
   const jobsRequest = useSelector((state) => state.searches.searchJobs);
   const status = useSelector((state) => state.searches.status);
 
@@ -25,12 +28,19 @@ export default function SearchJobList({ dark }) {
       if (nextJobPosts !== 10) {
         setNextJobPosts(10);
       }
-      return <img src={loadingSpinner} alt="" />;
+      return <img src={dark ? loadingSpinner : darkLoadingSpinner} alt="" />;
     } else if (jobsRequest[0] === "Fill in search field") {
       return <h2>Complete search field.</h2>;
     } else if (status === "success") {
+<<<<<<< HEAD
       return jobsRequest.slice(0, nextJobPosts).map((jobinfo, index, dark) => {
         return <JobPost dark={dark} {...jobinfo} key={index} />;
+=======
+      return jobsRequest.slice(0, nextJobPosts).map((jobinfo, index) => {
+
+        return <JobPost {...jobinfo} key={index} dark={dark} />;
+
+>>>>>>> dev
       });
     } else {
       <h2>Error: Please Try Again! </h2>;
@@ -49,8 +59,14 @@ export default function SearchJobList({ dark }) {
 
   return (
     <div>
-      <div className="jobList">{renderList()}</div>
-      <div className="button">{renderButton()}</div>
+      <div className="jobList">
+        {renderList()}
+      </div>
+
+      <div className={dark ? "button" : "darkButton"}>
+
+        {renderButton()}
+      </div>
     </div>
   ); //bc u can only ever return 1 div , need to wrap it
 }

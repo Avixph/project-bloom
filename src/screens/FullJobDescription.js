@@ -8,7 +8,7 @@ export default function FullJobDescription(props) {
     <div className="FullJobDescription">
       <Header />
       <div className="jobDetail">
-        <div>
+        <div className="jobDescriptParent">
         <h2 className="jobDescripTitle">{props.location.state.title}</h2>
           
           <div className="logoFrameDescrip">
