@@ -23,23 +23,23 @@ function App() {
   console.log(dark);
 
   return (
-    <div className={light ? "App" : "App-dark"}>
+    <div className={dark ? "App" : "App-dark"}>
       <main>
         <Switch>
           <Route exact path="/">
-            <LandingPage lightSwitch={handleLights} light={light} />
+            <LandingPage lightSwitch={handleLights} dark={dark} />
           </Route>
           <Route exact path="/home">
-            <HomePage lightSwitch={handleLights} light={light} />
+            <HomePage lightSwitch={handleLights} dark={dark} />
           </Route>
           <Route exact path="/search">
-            <SearchPage lightSwitch={handleLights} light={light} />
+            <SearchPage lightSwitch={handleLights} dark={dark} />
           </Route>
           <Route exact path="/about">
-            <AboutPage lightSwitch={handleLights} light={light} />
+            <AboutPage lightSwitch={handleLights} dark={dark} />
           </Route>
           <Route exact path="/jobDescription">
-            <FullJobDescription lightSwitch={handleLights} light={light} />
+            <FullJobDescription lightSwitch={handleLights} dark={dark} />
           </Route>
         </Switch>
       </main>

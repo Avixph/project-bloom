@@ -1,7 +1,7 @@
 import "../styles/componentStyles/Header.css";
 import { NavLink } from "react-router-dom";
 import bloomLogoLight from "../images/logos/project-bloom-logo-light.svg";
-// import bloomLogoDark from "../images/logos/project-bloom-logo-dark.svg";
+import bloomLogoDark from "../images/logos/project-bloom-logo-dark.svg";
 import LightsOut from "../components/LightsOut";
 
 
