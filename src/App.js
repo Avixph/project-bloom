@@ -8,11 +8,19 @@ import AboutPage from "./screens/AboutPage";
 import FullJobDescription from "./screens/FullJobDescription";
 
 function App() {
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState("false");
 
   const handleLights = () => {
-    setDark((light) => !light);
-  };
+    setDark((light) => !light); //??
+  }
+
+  if (!dark) {
+    document.body.classList.add("App-dark")
+  } else {
+    document.body.classList.remove("App-dark")
+  }
+
+  console.log(dark)
 
   return (
     <div className={dark ? "App" : "App-dark"}>
