@@ -20,20 +20,21 @@
 /* My styling code ---------------------------------------- */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
+@media only screen and (max-width: 600px) {}
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
   .jobDetail {
     margin: 13% 5% 6rem 5%;
     background-color: var(--deep-champagne);
     padding: 4%;
     border-radius: 10px;
-    color: var(--rich-black-fogar-39);
+    color: var(--rich-black-fogar-39)
   }
 
-  .jobDetail div:nth-child(1) {
+  .jobDescriptParent {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -74,7 +75,7 @@
   }
 
   .applyContainer {
-    text-align: center;
+    text-align: center; 
     margin-top: 4%;
   }
 
@@ -87,19 +88,26 @@
     border-radius: 10px;
     width: 11%;
     cursor: pointer;
+   
   }
+
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 882px and up) */
 @media only screen and (min-width: 882px) {
+  
 }
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+
+  
+
   .jobDescripTitle {
     font-size: 3vw;
   }
@@ -107,7 +115,11 @@
   .companyName {
     font-size: 2.2vw;
   }
+
+ 
+
 }
+
 
 /* Extra large devices (large laptops and desktops, 1300px and up) */
 @media only screen and (min-width: 1400px) {
