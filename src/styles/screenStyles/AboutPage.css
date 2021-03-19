@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
+/* /about pg css  */
 
 :root {
   --isabelline: #f9f6f2;
@@ -16,3 +17,47 @@
   --search-shadow: inset 6px 6px 9px #6e6c68ab, inset -6px -6px 60px #fff;
   --text-shadow: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style-type: none;
+  
+}
+
+/* .item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
+
+ .about {
+  background: rgb(255,208,133);
+  background: radial-gradient(circle, rgba(255,208,133,1) 9%, rgba(200,171,246,1) 100%);
+  } 
+
+.aboutBloom {
+  overflow-wrap: break-word;
+  text-align: center;
+  margin: auto;
+   /* background-color: var(--royal-purple);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 8%;
+  text-align: center;
+  background: rgb(255,208,133)  */
+
+} 
+.aboutHeading {
+font-size: 1.8rem;
+}
+
+ /* .aboutDescription {
+  text-align: center;
+  margin: auto
+  overflow-wrap: break-word;
+  font-weight: 1.5 rem;
+
+}    */

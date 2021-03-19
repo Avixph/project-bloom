@@ -2,14 +2,23 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import SearchField from "../components/SearchField";
 import SearchJobList from "../components/SearchJobList";
+// import Dropdown from "../components/DropDown";
 
 export default function SearchPage({ lightSwitch, dark }) {
   return (
     <div className="search">
+<<<<<<< HEAD
+      <Header />
+      <SearchField />
+      {/* <Dropdown /> */}
+      <SearchJobList />
+      <Footer />
+=======
       <Header handleLights={lightSwitch} dark={dark} />
       <SearchField handleLights={lightSwitch} dark={dark} />
       <SearchJobList handleLights={lightSwitch} dark={dark} />
       <Footer handleLights={lightSwitch} dark={dark} />
+>>>>>>> dev
     </div>
   );
 }
