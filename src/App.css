@@ -1,5 +1,4 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
-
 :root {
   --isabelline: #f9f6f2;
   --deep-champagne: #ffd085;
@@ -16,36 +15,16 @@
   --search-shadow: inset 6px 6px 9px #6e6c68ab, inset -6px -6px 60px #fff;
   --text-shadow: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
 }
-
-<<<<<<< HEAD
-.App-dark {
-  background-color: var(--russian-violet);
-}
-
-.App {
-  background-color: var(--mauve);
-}
-=======
-
-
-
 .App {
   background-color: var(--mauve);
 } 
-
 .App-dark {
   background-color: var(--russian-violet);
 } 
-
-
 .homeHeading {
   color: var(--isabelline);
 }
-
 .darkJobBlurb {
   background-color: var(--platinum);
 }
-
 } */
-
->>>>>>> dev

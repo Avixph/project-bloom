@@ -18,39 +18,36 @@
   --text-shadow: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
 }
 
-
-
 /* My styling code ---------------------------------------- */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
-
+@media only screen and (max-width: 600px) {
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
   html {
-    box-sizing: border-box; 
-  }
-  
-  *, *::before, *::after {
-    box-sizing: inherit; 
+    box-sizing: border-box;
   }
 
-  body, html {
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body,
+  html {
     margin: 0;
   }
 
   .headerArea {
     overflow: hidden;
-<<<<<<< HEAD
-=======
 
->>>>>>> dev
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: var(--mauve); 
+    background-color: var(--mauve);
     /* box-shadow: var(--lm-header-shadow); */
   }
 
@@ -59,24 +56,22 @@
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: var(--russian-violet); 
+    background-color: var(--russian-violet);
     /* box-shadow: var(--lm-header-shadow); */
   }
-  
 
-  .headerContent, nav ul {
+  .headerContent,
+  nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
   }
 
-  .darkHeaderContent, nav ul {
-
+  .darkHeaderContent,
+  nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
   }
 
   .logo {
@@ -86,14 +81,12 @@
     overflow: hidden;
   }
 
-  .headerContent nav{
-
+  .headerContent nav {
     width: 32rem;
     margin-right: 20px;
   }
 
   .darkHeaderContent nav {
-
     width: 32rem;
     margin-right: 20px;
   }
@@ -125,12 +118,6 @@
   .headerContent ul li a:hover {
     color: var(--deep-champagne);
   }
-<<<<<<< HEAD
-  .headerContent ul .darkLi a:hover {
-    color: var(--deep-champagne);
-  }
-=======
-
 
   .searchField {
     display: flex;
@@ -150,18 +137,18 @@
     border-radius: 10px;
     border: 2px solid var(--deep-champagne);
     outline: none;
-    line-height: 2; 
+    line-height: 2;
     padding: 0 7%;
     font-size: 1.2rem;
     text-align: center;
     width: 52%;
   }
-  
+
   .darkSearchField input {
     border-radius: 10px;
     border: 2px solid var(--platinum);
     outline: none;
-    line-height: 2; 
+    line-height: 2;
     padding: 0 7%;
     font-size: 1.2rem;
     text-align: center;
@@ -193,7 +180,6 @@
     cursor: pointer;
   }
 
-
   .darkSearchField button {
     color: var(--rich-black-fogar-39);
     background-color: var(--mauve);
@@ -208,67 +194,47 @@
   /* main div:first-child div:nth-child(2) button {
     cursor: pointer;  
   } */
-
-
->>>>>>> dev
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* Large devices (laptops/desktops, 882px and up) */
 @media only screen and (min-width: 882px) {
-
-  .logo{
+  .logo {
     width: 20%;
   }
 
   .headerContent ul li a {
     font-size: 2.2vw;
   }
-<<<<<<< HEAD
-  .headerContent ul .darkLi a {
-    font-size: 2.2vw;
-  }
-=======
-  
 
   .darkHeaderContent ul li a {
     font-size: 2.2vw;
   }
-
-
->>>>>>> dev
 }
-
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
-@media only screen and (min-width: 1200px) {}
-
-
-
+@media only screen and (min-width: 1200px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1300px and up) */
 @media only screen and (min-width: 1400px) {
-  .headerContent nav{
+  .headerContent nav {
     margin-right: 50px;
     width: 40rem;
   }
 
-  .darkHeaderContent nav{
+  .darkHeaderContent nav {
     margin-right: 50px;
     width: 40rem;
-  }  
+  }
 
-
-
-
-
-  .logo{
+  .logo {
     margin-left: 50px;
   }
-
 
   main div:first-child div:nth-child(2) input {
     font-size: 1.5rem;
@@ -282,6 +248,4 @@
   .darkSearchField button {
     font-size: 1.3rem;
   }
-
-
 }

@@ -1,16 +1,10 @@
 // searching input + button
 //using Redux react toolkit and slice
-
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-//(Below)import Thunk
 import { fetchSearch } from "../redux/searchJobSlice";
 
-<<<<<<< HEAD
 export default function SearchField({ dark }) {
-=======
-export default function SearchField({dark}) {
->>>>>>> dev
   const dispatch = useDispatch();
 
   const [search, setSearch] = useState("");
