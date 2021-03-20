@@ -34,7 +34,7 @@
     color: var(--rich-black-fogar-39)
   }
 
-  .jobDetail img {
+  .jobDetail img, .darkJobDetail img {
     width: 100%;    
   }
 

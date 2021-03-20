@@ -36,7 +36,7 @@
   }
 
   .jobBlurb{
-    width: 35%;
+    width: 68%;
     margin-bottom: 2%;
     background-color: var(--deep-champagne);
     padding: 2% 2%;
@@ -45,7 +45,7 @@
   }
 
   .darkJobBlurb{
-    width: 35%;
+    width: 68%;
     margin-bottom: 2%;
     background-color: var(--platinum);
     padding: 2% 2%;
