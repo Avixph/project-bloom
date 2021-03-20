@@ -6,10 +6,12 @@ import LightsOut from "../components/LightsOut";
 
 
 
-export default function Humburger({ dark }) {
+export default function Humburger({ dark, lightSwitch }) {
 
   const [showMenu, setShowMenu] = useState(false);
 
+
+  console.log(lightSwitch);
 
   function renderMenu () {
     if (showMenu) {
@@ -32,7 +34,7 @@ export default function Humburger({ dark }) {
                </NavLink>
              </li>
              <li className="lightsOutBurger">
-               <LightsOut />
+             <LightsOut lightSwitch={lightSwitch} />
              </li>
            </ul>
        </div>

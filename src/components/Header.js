@@ -6,6 +6,7 @@ import LightsOut from "../components/LightsOut";
 import Hamburger from "./Humburger";
 
 export default function Header({ handleLights, dark}) {
+
   return (
     <header className={dark ? "headerArea" : "darkHeaderArea"}>
       <div className={dark ? "headerContent" : "darkHeaderContent"}>
@@ -28,7 +29,7 @@ export default function Header({ handleLights, dark}) {
               </NavLink>
             </li>
             <li className="displayHamburger">
-              <Hamburger dark={dark} />
+              <Hamburger lightSwitch={ handleLights} dark={dark} />
             </li>
             <li className="displayNav">
               <LightsOut lightSwitch={handleLights} />

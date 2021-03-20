@@ -245,6 +245,8 @@
     width: 100%;
     text-align: center;
     box-shadow: 0px 0px 5px 1px rgb(17 17 17 / 19%);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
   .hamMenu ul li a {
@@ -262,6 +264,7 @@
 
   .lightsOutBurger div {
     margin: 0;
+   
   }
 
   .lightsOutBurger button {
@@ -364,4 +367,3 @@
   }
 
 }
-
