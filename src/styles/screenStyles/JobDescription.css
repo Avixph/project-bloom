@@ -20,7 +20,102 @@
 /* My styling code ---------------------------------------- */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+  .jobDetail {
+    margin: 13% 5% 6rem 5%;
+    background-color: var(--deep-champagne);
+    padding: 4%;
+    border-radius: 10px;
+    color: var(--rich-black-fogar-39)
+  }
+
+  .jobDetail img, .darkJobDetail img {
+    width: 100%;    
+  }
+
+  
+  .darkJobDetail {
+    margin: 13% 5% 6rem 5%;
+    background-color: var(--platinum);
+    padding: 4%;
+    border-radius: 10px;
+    color: var(--rich-black-fogar-39)
+  }
+
+  .jobDescriptParent {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .jobDescripTitle {
+    font-family: var(--title-font);
+    width: 60%;
+    margin-right: 3%;
+    text-align: center;
+    color: var(--russian-violet);
+  }
+
+  .logoFrameDescrip {
+    width: 24%;
+  }
+
+  .logoFrameDescrip img {
+    width: 50%;
+  }
+
+  .companyName {
+    font-family: var(--title-font);
+    text-align: center;
+  }
+
+  .jobDecripItems {
+    color: var(--rich-black-fogar-39);
+    font-family: var(--body-font);
+    display: flex;
+    justify-content: center;
+  }
+
+  .jobDecripItems p {
+    margin: 0;
+    width: 33%;
+    text-align: center;
+  }
+
+  .jobDescripContent {
+    color: var(--rich-black-fogar-39);
+    font-family: var(--body-font);
+    margin-top: 4%;
+  }
+
+  .applyContainer {
+    text-align: center; 
+    margin-top: 4%;
+  }
+
+  .applyButton button {
+    color: var(--deep-champagne);
+    background-color: var(--russian-violet);
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    width: 11%;
+    cursor: pointer;
+  }
+
+
+  .darkApplyButton button {
+    color: var(--platinum);
+    background-color: var(--russian-violet);
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    width: 11%;
+    cursor: pointer;
+  }
+}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -156,5 +251,4 @@
     font-size: 1.1rem;
   }
 }
-
 
