@@ -37,6 +37,12 @@
   background: radial-gradient(circle, rgba(255,208,133,1) 9%, rgba(200,171,246,1) 100%);
   } 
 
+  .aboutDescription{
+    margin-top: 8%;
+    font-size: 1.5rem;
+  
+  }
+
 .aboutBloom {
   overflow-wrap: break-word;
   text-align: center;
@@ -52,6 +58,7 @@
 } 
 .aboutHeading {
 font-size: 1.8rem;
+margin-top: 2%;
 }
 
  /* .aboutDescription {
