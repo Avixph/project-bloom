@@ -21,7 +21,116 @@
 /* below is my css code-------------------- */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+  .jobList {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 4%;
+    justify-content: space-around;
+  }
+
+  .jobBlurb{
+    width: 68%;
+    margin-bottom: 2%;
+    background-color: var(--deep-champagne);
+    padding: 2% 2%;
+    border-radius: 20px;
+    box-shadow: var(--platinum);
+  }
+
+  .darkJobBlurb{
+    width: 68%;
+    margin-bottom: 2%;
+    background-color: var(--platinum);
+    padding: 2% 2%;
+    border-radius: 20px;
+    /* box-shadow: var(--lm-header-shadow); */
+  }
+
+  .button {
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  .darkButton {
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  .button button, .jobBlurb button {
+    font-family: var(--body-font);
+    color: var(--deep-champagne);
+    background-color: var(--russian-violet);
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .darkButton button {
+    color: var(--rich-black-fogar-39);
+    background-color: var(--platinum);
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .darkJobBlurb button {
+    font-family: var(--body-font);
+    color: var(--platinum);
+    background-color: var(--russian-violet);
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .jobBlurb button{
+    width: 30%;
+  }
+
+  .darkJobBlurb button{
+    width: 30%;
+
+  }
+
+  .button button {
+    width: 15%;
+  }
+
+  .darkButton button {
+    width: 15%;
+  }
+  
+  .jobItems {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+
+  .jobRequirement {
+    margin-left: 15%;
+    width: 100px;
+  }
+
+  .jobHours {
+    margin-right: 25%;
+  }
+
+  .jobTitle {
+    line-height: 1.5em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: var(--title-font);
+  }  
+
+}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
