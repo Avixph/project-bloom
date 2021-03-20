@@ -49,6 +49,7 @@
   }
 
   .jobDescripTitle {
+    font-family: var(--title-font);
     width: 60%;
     margin-right: 3%;
     text-align: center;
@@ -69,6 +70,8 @@
   }
 
   .jobDecripItems {
+    color: var(--rich-black-fogar-39);
+    font-family: var(--body-font);
     display: flex;
     justify-content: center;
   }
@@ -80,6 +83,8 @@
   }
 
   .jobDescripContent {
+    color: var(--rich-black-fogar-39);
+    font-family: var(--body-font);
     margin-top: 4%;
   }
 
@@ -97,9 +102,19 @@
     border-radius: 10px;
     width: 11%;
     cursor: pointer;
-   
   }
 
+
+  .darkApplyButton button {
+    color: var(--platinum);
+    background-color: var(--russian-violet);
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    width: 11%;
+    cursor: pointer;
+  }
 
 }
 
