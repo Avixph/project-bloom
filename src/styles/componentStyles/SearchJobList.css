@@ -36,7 +36,6 @@
   }
 
   .jobBlurb{
-
     width: 35%;
     margin-bottom: 2%;
     background-color: var(--deep-champagne);
@@ -46,7 +45,6 @@
   }
 
   .darkJobBlurb{
-
     width: 35%;
     margin-bottom: 2%;
     background-color: var(--platinum);
@@ -60,13 +58,13 @@
     text-align: center;
   }
 
-
   .darkButton {
     margin-bottom: 100px;
     text-align: center;
   }
 
   .button button, .jobBlurb button {
+    font-family: var(--body-font);
     color: var(--deep-champagne);
     background-color: var(--russian-violet);
     border: none;
@@ -87,7 +85,6 @@
   }
 
   .darkJobBlurb button {
-
     color: var(--deep-champagne);
     background-color: var(--russian-violet);
     border: none;
@@ -98,12 +95,10 @@
   }
 
   .jobBlurb button{
-
     width: 30%;
   }
 
   .darkJobBlurb button{
-
     width: 30%;
 
   }
@@ -112,12 +107,10 @@
     width: 15%;
   }
 
-
   .darkButton button {
     width: 15%;
   }
   
-
   .jobItems {
     display: flex;
     justify-content: space-around;
@@ -138,6 +131,7 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    font-family: var(--title-font);
   }  
 
 
@@ -153,11 +147,9 @@
     width: 41%;
   }
 
-
   .darkJobBlurb {
     width: 41%;
   }
-
 
 }
 
@@ -173,13 +165,11 @@
     width: 40%;
   }
 
-
   .darkJobBlurb {
     width: 40%;
   }
 
   .jobJobBlurb button{
-
    font-size: 1.1rem;
 
   }
