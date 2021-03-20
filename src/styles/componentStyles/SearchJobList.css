@@ -85,7 +85,8 @@
   }
 
   .darkJobBlurb button {
-    color: var(--deep-champagne);
+    font-family: var(--body-font);
+    color: var(--platinum);
     background-color: var(--russian-violet);
     border: none;
     outline: none;
