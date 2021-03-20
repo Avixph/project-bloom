@@ -278,10 +278,17 @@
     font-size: 2.5rem;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
+    border-radius: 0;
   }
 
   .lightsOutBurger button:hover {
     background-color: var(--african-violet);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .lightsOutBurger {
+    box-shadow: none;
   }
 
 }
