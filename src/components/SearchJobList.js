@@ -6,8 +6,7 @@ import loadingSpinner from "../images/loading/spinner.gif";
 import darkLoadingSpinner from "../images/loading/darkSpinner.gif";
 //import DropDownTest from "./DropDownTest";
 
-//drop down goes here
-//step 1 make drop down without API
+//load more button functionality
 
 export default function SearchJobList({ dark }) {
   const jobsRequest = useSelector((state) => state.searches.searchJobs);

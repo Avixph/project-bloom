@@ -6,7 +6,6 @@ import LightsOut from "../components/LightsOut";
 import Hamburger from "./Humburger";
 
 export default function Header({ handleLights, dark}) {
-
   return (
     <header className={dark ? "headerArea" : "darkHeaderArea"}>
       <div className={dark ? "headerContent" : "darkHeaderContent"}>

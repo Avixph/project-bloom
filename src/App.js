@@ -11,7 +11,7 @@ function App() {
   const [dark, setDark] = useState("false");
 
   const handleLights = () => {
-    setDark((light) => !light); //??
+    setDark((light) => !light); 
   };
 
   if (!dark) {
@@ -19,8 +19,7 @@ function App() {
   } else {
     document.body.classList.remove("App-dark");
   }
-
-  console.log(dark);
+  // console.log(dark);
 
   return (
     <div className={dark ? "App" : "App-dark"}>

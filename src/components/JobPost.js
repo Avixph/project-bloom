@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import noImage from "../images/logos/no-image-logo.svg";
+//display post
 
 export default function JobPost(props) {
   console.log(props.dark);
