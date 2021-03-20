@@ -46,6 +46,7 @@
     font-size: 3.8vw;
     text-align: center;
     color: var(--platinum);
+    font-family: var(--title-font);
   } 
 
   .randomList:nth-child(2) button:nth-child(2){
