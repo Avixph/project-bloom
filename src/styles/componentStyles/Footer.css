@@ -42,7 +42,40 @@
 /* below is my css code-------------------- */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+  .footerDetail {
+    font-size: 4.4vw;
+    color: var(--fourth-color);
+  }
+
+  .darkFooterDetail {
+    font-size: 4.4vw;
+    color: var(--platinum);
+  }
+
+  .footerArea {
+    text-align: center; 
+
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+    background-color: var(--mauve); 
+
+    border-top: var(--deep-champagne) solid 2px;
+  }
+
+  .darkFooterArea {
+      text-align: center; 
+      overflow: hidden;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      background-color: var(--russian-violet); 
+      border-top: var(--platinum) solid 2px;
+  }
+}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
