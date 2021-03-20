@@ -21,56 +21,57 @@
 /* My styling code ---------------------------------------- */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
+@media only screen and (max-width: 600px) {}
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
   html {
-    box-sizing: border-box;
+    box-sizing: border-box; 
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit; 
   }
 
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-
-  body,
-  html {
+  body, html {
     margin: 0;
   }
 
   .headerArea {
+    font-family: var(--title-font);
     overflow: hidden;
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: var(--mauve);
+    background-color: var(--mauve); 
     /* box-shadow: var(--lm-header-shadow); */
   }
 
   .darkHeaderArea {
+    font-family: var(--title-font);
     overflow: hidden;
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: var(--russian-violet);
+    background-color: var(--russian-violet); 
     /* box-shadow: var(--lm-header-shadow); */
   }
+  
 
-  .headerContent,
-  nav ul {
+  .headerContent, nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
   }
 
-  .darkHeaderContent,
-  nav ul {
+  .darkHeaderContent, nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
   }
 
   .logo {
@@ -80,13 +81,11 @@
     overflow: hidden;
   }
 
-  .headerContent nav {
-    width: 32rem;
+  .headerContent nav{
     margin-right: 20px;
   }
 
   .darkHeaderContent nav {
-    width: 32rem;
     margin-right: 20px;
   }
 
@@ -100,7 +99,6 @@
 
   .headerContent ul li a {
     color: var(--fourth-color);
-
     text-decoration: none;
     font-weight: bolder;
     font-size: 1.3rem;
@@ -108,7 +106,6 @@
 
   .darkHeaderContent ul li a {
     color: var(--platinum);
-
     text-decoration: none;
     font-weight: bolder;
     font-size: 1.3rem;
@@ -136,18 +133,18 @@
     border-radius: 10px;
     border: 2px solid var(--deep-champagne);
     outline: none;
-    line-height: 2;
+    line-height: 2; 
     padding: 0 7%;
     font-size: 1.2rem;
     text-align: center;
     width: 52%;
   }
-
+  
   .darkSearchField input {
     border-radius: 10px;
     border: 2px solid var(--platinum);
     outline: none;
-    line-height: 2;
+    line-height: 2; 
     padding: 0 7%;
     font-size: 1.2rem;
     text-align: center;
@@ -179,6 +176,7 @@
     cursor: pointer;
   }
 
+
   .darkSearchField button {
     color: var(--rich-black-fogar-39);
     background-color: var(--mauve);
@@ -193,45 +191,145 @@
   /* main div:first-child div:nth-child(2) button {
     cursor: pointer;  
   } */
+
+  .displayNav {
+    display: none;
+  }
+
+  .hamburgerMenu {
+    font-size: 3vw;
+    color: var(--deep-champagne);
+    background-color: var(--african-violet);
+    border-radius: 10px;
+    padding: 8px;
+  }
+
+  .darkHamburgerMenu {
+    font-size: 4vw;
+    color: var(--platinum)
+  }
+
+  .hamMenu {
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    top: 77px;
+    background-color: var(--royal-purple);
+    border-radius: 3px;
+  }
+
+  .hamMenu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 0;
+  }
+
+  .hamMenu ul li {
+    width: 100%;
+    text-align: center;
+    /* box-shadow: var(--lm-shadow); */
+  }
+
+  .hamMenu ul li a {
+    display: inline-block;
+    width: 100%;
+    padding: 4% 0;
+    color: var(--deep-champagne);
+    font-size: 1.7rem;
+  } 
+
+  .hamMenu ul li a:hover {
+   background-color: var(--deep-champagne);
+   color: var(--rich-black-fogar-39);
+  }
+
+  .lightsOutBurger div {
+    margin: 0;
+  }
+
+  .lightsOutBurger button {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    padding: 4% 10%;
+    background-color: #aa88c670;
+    outline: none;
+    font-size: 2.5rem;
+  }
+
+  .lightsOutBurger button:hover {
+    background-color: var(--african-violet);
+  }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+ 
+
+
+
 }
 
 /* Large devices (laptops/desktops, 882px and up) */
 @media only screen and (min-width: 882px) {
-  .logo {
+
+  .logo{
     width: 20%;
   }
 
   .headerContent ul li a {
     font-size: 2.2vw;
   }
-
+  
   .darkHeaderContent ul li a {
     font-size: 2.2vw;
   }
+
+  .headerContent nav {
+    width: 32rem;
+  }
+
+   .darkHeaderContent nav {
+    width: 32rem;
+  }
+
+  .displayNav {
+    display: flex;
+  }
+
+  
+  .displayHamburger {
+    display: none;
+  }
+
+
+
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
 
-@media only screen and (min-width: 1200px) {
-}
 
 /* Extra large devices (large laptops and desktops, 1300px and up) */
 @media only screen and (min-width: 1400px) {
-  .headerContent nav {
+  .headerContent nav{
     margin-right: 50px;
     width: 40rem;
   }
 
-  .darkHeaderContent nav {
+  .darkHeaderContent nav{
     margin-right: 50px;
     width: 40rem;
   }
 
-  .logo {
+
+
+  .logo{
     margin-left: 50px;
   }
 
@@ -247,4 +345,6 @@
   .darkSearchField button {
     font-size: 1.3rem;
   }
+
 }
+
