@@ -7,18 +7,10 @@ import SearchJobList from "../components/SearchJobList";
 export default function SearchPage({ lightSwitch, dark }) {
   return (
     <div className="search">
-<<<<<<< HEAD
-      <Header />
-      <SearchField />
-      {/* <Dropdown /> */}
-      <SearchJobList />
-      <Footer />
-=======
       <Header handleLights={lightSwitch} dark={dark} />
       <SearchField handleLights={lightSwitch} dark={dark} />
       <SearchJobList handleLights={lightSwitch} dark={dark} />
       <Footer handleLights={lightSwitch} dark={dark} />
->>>>>>> dev
     </div>
   );
 }

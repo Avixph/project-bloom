@@ -6,7 +6,6 @@ import LightsOut from "../components/LightsOut";
 
 
 export default function Header({ handleLights, dark}) {
-
   return (
     <header className={dark ? "headerArea" : "darkHeaderArea"}>
       <div className={dark ? "headerContent" : "darkHeaderContent"}>

@@ -11,7 +11,7 @@ function App() {
   const [dark, setDark] = useState("false");
 
   const handleLights = () => {
-    setDark((light) => !light); //??
+    setDark((light) => !light); 
   };
 
   if (!dark) {
@@ -19,8 +19,7 @@ function App() {
   } else {
     document.body.classList.remove("App-dark");
   }
-
-  console.log(dark);
+  // console.log(dark);
 
   return (
     <div className={dark ? "App" : "App-dark"}>
@@ -35,12 +34,11 @@ function App() {
           <Route exact path="/search">
             <SearchPage lightSwitch={handleLights} dark={dark} />
           </Route>
-          <Route exact path="/about">
+          <Route exact path="/about" component={AboutPage}>
             <AboutPage lightSwitch={handleLights} dark={dark} />
           </Route>
-          <Route exact path="/jobDescription">
-            <FullJobDescription lightSwitch={handleLights} dark={dark} />
-          </Route>
+          {/* https://reactrouter.com/web/api/Route/render-func */ }
+          <Route exact path="/jobDescription" render={ props => <FullJobDescription {...props } lightSwitch={handleLights} dark={dark} />} />
         </Switch>
       </main>
     </div>

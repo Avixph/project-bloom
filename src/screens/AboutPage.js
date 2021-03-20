@@ -4,16 +4,17 @@ import Footer from "../components/Footer";
 import AboutTeam from "../components/AboutTeam";
 import { teamBloom } from "../services/team.json";
 
-
-export default function AboutPage() {
+export default function AboutPage({ lightSwitch, dark }) {
+  console.log(lightSwitch)
   const renderTeam = () => {
-    return teamBloom.map((teamInfo, index) => {
-      return <AboutTeam  {...teamInfo} key={index} />;
+    return teamBloom.map((teamInfo, index, dark) => {
+      return <AboutTeam  {...teamInfo} key={index} dark={dark} />;
     });
   };
+  //font color, button color, card color, background color?
   return (
     <div className="about"> 
-      <Header />
+      <Header handleLights={lightSwitch} dark={dark} />
       <div className="aboutBloom">
         <h1 className="aboutHeading">About</h1>{" "}
         <p className="aboutDescription">
@@ -22,10 +23,10 @@ export default function AboutPage() {
           of time it takes to find relevant roles for the skills one is
           proficient in and the location they are in.
         </p>{" "}
+        
       </div>
       <div className="container">{renderTeam()}</div> 
-
-      <Footer />
+      <Footer dark={dark} />
     </div>
   );
 }
