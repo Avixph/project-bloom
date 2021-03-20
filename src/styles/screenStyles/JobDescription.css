@@ -65,6 +65,7 @@
   }
 
   .companyName {
+    font-size: 3.2vw;
     font-family: var(--title-font);
     text-align: center;
   }

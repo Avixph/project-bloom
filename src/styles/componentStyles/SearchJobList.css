@@ -91,10 +91,12 @@
   }
 
   .jobBlurb button{
+    font-size: 2.2vw;
     width: 30%;
   }
 
   .darkJobBlurb button{
+    font-size: 2.2vw;
     width: 30%;
 
   }
@@ -128,6 +130,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     font-family: var(--title-font);
+    font-size: 4.2vw;
   }  
 
 }
