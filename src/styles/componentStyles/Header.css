@@ -21,7 +21,267 @@
 /* My styling code ---------------------------------------- */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+  html {
+    box-sizing: border-box; 
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit; 
+  }
+
+  body, html {
+    margin: 0;
+  }
+
+  .headerArea {
+    font-family: var(--title-font);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--mauve); 
+  }
+
+  .darkHeaderArea {
+    font-family: var(--title-font);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--russian-violet); 
+  }
+  
+
+  .headerContent, nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .darkHeaderContent, nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 12rem;
+    padding: 6px 0;
+    margin-left: 20px;
+    overflow: hidden;
+  }
+
+  .headerContent nav{
+    margin-right: 20px;
+  }
+
+  .darkHeaderContent nav {
+    margin-right: 20px;
+  }
+
+  .headerContent nav ul {
+    list-style-type: none;
+  }
+
+  .darkHeaderContent nav ul {
+    list-style-type: none;
+  }
+
+  .headerContent ul li a {
+    color: var(--fourth-color);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.3rem;
+  }
+
+  .darkHeaderContent ul li a {
+    color: var(--platinum);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.3rem;
+  }
+
+  .headerContent ul li a:hover {
+    color: var(--deep-champagne);
+  }
+
+  .searchField {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+  }
+
+  .darkSearchField {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+  }
+
+  .searchField input {
+    border-radius: 10px;
+    border: 2px solid var(--deep-champagne);
+    outline: none;
+    line-height: 2; 
+    padding: 0 7%;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 52%;
+  }
+  
+  .darkSearchField input {
+    border-radius: 10px;
+    border: 2px solid var(--platinum);
+    outline: none;
+    line-height: 2; 
+    padding: 0 7%;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 52%;
+  }
+
+  .searchDivider {
+    margin: 1.5% 0;
+    width: 41%;
+    height: 2px;
+    background-color: var(--deep-champagne);
+  }
+
+  .darkSearchDivider {
+    margin: 1.5% 0;
+    width: 41%;
+    height: 2px;
+    background-color: var(--platinum);
+  }
+
+  .searchField button {
+    color: var(--deep-champagne);
+    background-color: var(--russian-violet);
+    border: none;
+    width: 16%;
+    outline: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+
+  .darkSearchField button {
+    color: var(--rich-black-fogar-39);
+    background-color: var(--mauve);
+    border: none;
+    width: 16%;
+    outline: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  /* main div:first-child div:nth-child(2) button {
+    cursor: pointer;  
+  } */
+
+  .displayNav {
+    display: none;
+  }
+
+  svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    font-size: 2.3rem;
+    display: inline-block;
+    padding: 7px;
+   
+}
+
+  .hamburgerMenu {
+    font-size: 3vw;
+    color: var(--deep-champagne);
+    background-color: var(--african-violet);
+    border-radius: 10px;
+    /* padding: 8px; */
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .darkHamburgerMenu {
+    font-size: 3vw;
+    background-color: var(--african-violet);
+    border-radius: 10px;
+    color: var(--platinum);
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .hamMenu {
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    top: 77px;
+    background-color: #7a559af2;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .hamMenu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 0;
+  }
+
+  .hamMenu ul li {
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 5px 1px rgb(17 17 17 / 19%);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+  .hamMenu ul li a {
+    display: inline-block;
+    width: 100%;
+    padding: 4% 0;
+    color: var(--deep-champagne);
+    font-size: 1.7rem;
+  } 
+
+  .hamMenu ul li a:hover {
+   background-color: var(--deep-champagne);
+   color: var(--rich-black-fogar-39);
+  }
+
+  .lightsOutBurger div {
+    margin: 0;
+   
+  }
+
+  .lightsOutBurger button {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    padding: 4% 10%;
+    background-color: #aa88c670;
+    outline: none;
+    font-size: 2.5rem;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-radius: 0;
+  }
+
+  .lightsOutBurger button:hover {
+    background-color: var(--african-violet);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .lightsOutBurger {
+    box-shadow: none;
+  }
+}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -46,7 +306,6 @@
     width: 100%;
     top: 0;
     background-color: var(--mauve); 
-    /* box-shadow: var(--lm-header-shadow); */
   }
 
   .darkHeaderArea {
@@ -56,7 +315,6 @@
     width: 100%;
     top: 0;
     background-color: var(--russian-violet); 
-    /* box-shadow: var(--lm-header-shadow); */
   }
   
 
@@ -64,14 +322,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
   }
 
   .darkHeaderContent, nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
   }
 
   .logo {
