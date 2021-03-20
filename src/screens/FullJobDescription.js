@@ -44,7 +44,7 @@ export default function FullJobDescription(props) {
           </a>
         </div>
       </div>
-      <Footer />
+      <Footer dark={props.dark} />
     </div>
   );
 }
