@@ -10,7 +10,7 @@ export default function FullJobDescription(props) {
   return (
     <div className="FullJobDescription">
       <Header handleLights={props.lightSwitch} dark={props.dark} />
-      <div className="jobDetail">
+      <div className={props.dark ? "jobDetail" : "darkJobDetail"}>
         <div className="jobDescriptParent">
         <h2 className="jobDescripTitle">{props.location.state.title}</h2>
           
@@ -48,4 +48,3 @@ export default function FullJobDescription(props) {
     </div>
   );
 }
-
