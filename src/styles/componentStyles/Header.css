@@ -196,17 +196,31 @@
     display: none;
   }
 
+  svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    font-size: 2.3rem;
+    display: inline-block;
+    padding: 7px;
+   
+}
+
   .hamburgerMenu {
     font-size: 3vw;
     color: var(--deep-champagne);
     background-color: var(--african-violet);
     border-radius: 10px;
-    padding: 8px;
+    /* padding: 8px; */
+    display: inline-block;
+    cursor: pointer;
   }
 
   .darkHamburgerMenu {
-    font-size: 4vw;
-    color: var(--platinum)
+    font-size: 3vw;
+    background-color: var(--african-violet);
+    border-radius: 10px;
+    color: var(--platinum);
+    display: inline-block;
+    cursor: pointer;
   }
 
   .hamMenu {
@@ -215,8 +229,9 @@
     z-index: 1;
     width: 100%;
     top: 77px;
-    background-color: var(--royal-purple);
-    border-radius: 3px;
+    background-color: #7a559af2;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
   }
 
   .hamMenu ul {
@@ -229,8 +244,8 @@
   .hamMenu ul li {
     width: 100%;
     text-align: center;
-    /* box-shadow: var(--lm-shadow); */
-  }
+    box-shadow: 0px 0px 5px 1px rgb(17 17 17 / 19%);
+}
 
   .hamMenu ul li a {
     display: inline-block;
@@ -258,6 +273,8 @@
     background-color: #aa88c670;
     outline: none;
     font-size: 2.5rem;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
   }
 
   .lightsOutBurger button:hover {
