@@ -11,15 +11,6 @@ export default function Humburger({ dark }) {
   const [showMenu, setShowMenu] = useState(false);
 
 
-
-  const mystyle = {
-    position: "fixed",
-    color: "white",
-    backgroundColor: "DodgerBlue",
-    padding: "10px",
-    fontFamily: "Arial"
-  };
-
   function renderMenu () {
     if (showMenu) {
      return (
