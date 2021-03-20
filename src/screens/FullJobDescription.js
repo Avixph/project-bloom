@@ -4,9 +4,12 @@ import Footer from "../components/Footer";
 import noImage from "../images/logos/no-image-logo.svg";
 
 export default function FullJobDescription(props) {
+  console.log(props.lightSwitch)
+  console.log(props.dark)
+
   return (
     <div className="FullJobDescription">
-      <Header />
+      <Header handleLights={props.lightSwitch} dark={props.dark} />
       <div className="jobDetail">
         <div className="jobDescriptParent">
         <h2 className="jobDescripTitle">{props.location.state.title}</h2>
