@@ -34,6 +34,11 @@
     color: var(--rich-black-fogar-39)
   }
 
+  .jobDetail img {
+    width: 100%;    
+  }
+
+  
   .darkJobDetail {
     margin: 13% 5% 6rem 5%;
     background-color: var(--platinum);
@@ -151,4 +156,5 @@
     font-size: 1.1rem;
   }
 }
+
 
