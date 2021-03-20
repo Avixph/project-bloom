@@ -35,15 +35,14 @@ function App() {
           <Route exact path="/search">
             <SearchPage lightSwitch={handleLights} dark={dark} />
           </Route>
-          <Route exact path="/about">
+          <Route exact path="/about" component={AboutPage}>
             <AboutPage lightSwitch={handleLights} dark={dark} />
           </Route>
-          <Route exact path="/jobDescription">
-            <FullJobDescription lightSwitch={handleLights} dark={dark} />
-          </Route>
+          <Route exact path="/jobDescription" render={ props => <FullJobDescription {...props } lightSwitch={handleLights} dark={dark} />} />
         </Switch>
       </main>
     </div>
   );
 }
 export default App;
+
