@@ -37,6 +37,8 @@
   background: radial-gradient(circle, rgba(255,208,133,1) 9%, rgba(200,171,246,1) 100%);
   } 
 
+  
+
   .aboutDescription{
     margin-top: 8%;
     font-size: 1.5rem;
@@ -47,13 +49,13 @@
   overflow-wrap: break-word;
   text-align: center;
   margin: auto;
-   /* background-color: var(--royal-purple);
+    /* background-color: var(--royal-purple);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
   margin-bottom: 8%;
   text-align: center;
-  background: rgb(255,208,133)  */
+  background: rgb(255,208,133)   */
 
 } 
 .aboutHeading {

@@ -24,11 +24,25 @@
   margin: auto;
   margin-bottom: 8%;
   text-align: center;
-}   
+}  
+
+.TeamMember-dark { 
+  background-color: var(--russian-violet);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 8%;
+  text-align: center;
+} 
 .TeamMember:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-
+.button-dark{
+  background-color: var(--african-violet)
+}
+.button-light{
+  background-color: var(--deep-champagne) ;
+}
 .image {
   width: 100%;
   margin-bottom: auto 200%;
@@ -47,3 +61,4 @@
 /* .LinkedIn,  {
   color: #f9f6f2;
 } */
+
