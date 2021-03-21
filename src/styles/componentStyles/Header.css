@@ -157,6 +157,7 @@
   }
 
   .searchField button {
+    font-size: 2.2vw;
     color: var(--deep-champagne);
     background-color: var(--russian-violet);
     border: none;
@@ -169,6 +170,7 @@
 
 
   .darkSearchField button {
+    font-size: 2.2vw;
     color: var(--rich-black-fogar-39);
     background-color: var(--mauve);
     border: none;

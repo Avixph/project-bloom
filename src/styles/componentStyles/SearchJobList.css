@@ -49,16 +49,17 @@
   }
 
   .button {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     text-align: center;
   }
 
   .darkButton {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     text-align: center;
   }
 
   .button button, .jobBlurb button {
+    font-size: 2.2vw;
     font-family: var(--body-font);
     color: var(--deep-champagne);
     background-color: var(--russian-violet);
@@ -70,6 +71,7 @@
   }
 
   .darkButton button {
+    font-size: 2.2vw;
     color: var(--rich-black-fogar-39);
     background-color: var(--platinum);
     border: none;
