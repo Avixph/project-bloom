@@ -37,7 +37,6 @@ function App() {
           <Route exact path="/about" component={AboutPage}>
             <AboutPage lightSwitch={handleLights} dark={dark} />
           </Route>
-          {/* https://reactrouter.com/web/api/Route/render-func */ }
           <Route exact path="/jobDescription" render={ props => <FullJobDescription {...props } lightSwitch={handleLights} dark={dark} />} />
         </Switch>
       </main>
@@ -45,3 +44,4 @@ function App() {
   );
 }
 export default App;
+

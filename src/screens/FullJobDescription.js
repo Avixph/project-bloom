@@ -4,10 +4,13 @@ import Footer from "../components/Footer";
 import noImage from "../images/logos/no-image-logo.svg";
 
 export default function FullJobDescription(props) {
+  console.log(props.lightSwitch)
+  console.log(props.dark)
+
   return (
     <div className="FullJobDescription">
-      <Header />
-      <div className="jobDetail">
+      <Header handleLights={props.lightSwitch} dark={props.dark} />
+      <div className={props.dark ? "jobDetail" : "darkJobDetail"}>
         <div className="jobDescriptParent">
         <h2 className="jobDescripTitle">{props.location.state.title}</h2>
           
@@ -36,13 +39,12 @@ export default function FullJobDescription(props) {
           dangerouslySetInnerHTML={{ __html: props.location.state.description }}
         />
         <div className="applyContainer">
-          <a className="applyButton" href={props.location.state.apply} target="_blank" rel="noreferrer">
+          <a className={props.dark ? "applyButton" : "darkApplyButton"} href={props.location.state.apply} target="_blank" rel="noreferrer">
             <button>apply</button>
           </a>
         </div>
       </div>
-      <Footer />
+      <Footer dark={props.dark} />
     </div>
   );
 }
-
