@@ -18,55 +18,138 @@
   --text-shadow: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  list-style-type: none;
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-bottom: 12%;
+  }
   
+  /* .item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  } */
+  
+   .about {
+      background: rgb(255,208,133);
+      background: radial-gradient(circle, rgba(255,208,133,1) 9%, rgba(200,171,246,1) 100%);
+    } 
+  
+    
+  
+    .aboutDescription {
+      font-family: var(--body-font);
+      font-size: 3rem;
+      font-size: 1.5rem;
+    }
+  
+  .aboutBloom {
+    overflow-wrap: break-word;
+    text-align: center;
+    margin: auto;
+      /* background-color: var(--royal-purple);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 8%;
+    text-align: center;
+    background: rgb(255,208,133)   */
+  } 
+  
+  .aboutHeading {
+  font-size: 1.8rem;
+  margin-top: 2%;
+  }
+  
+   /* .aboutDescription {
+    text-align: center;
+    margin: auto
+    overflow-wrap: break-word;
+    font-weight: 1.5 rem;
+  
+  }    */
 }
 
-/* .item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-} */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
 
- .about {
-  background: rgb(255,208,133);
-  background: radial-gradient(circle, rgba(255,208,133,1) 9%, rgba(200,171,246,1) 100%);
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-bottom: 12%;
+  }
+  
+  /* .item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  } */
+  
+   .about {
+      background: rgb(255,208,133);
+      background: radial-gradient(circle, rgba(255,208,133,1) 9%, rgba(200,171,246,1) 100%);
+    } 
+  
+    
+  
+    .aboutDescription {
+      font-family: var(--body-font);
+      margin-top: 8%;
+      font-size: 1.5rem;
+    }
+  
+  .aboutBloom {
+    overflow-wrap: break-word;
+    text-align: center;
+    margin: auto;
+      /* background-color: var(--royal-purple);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 8%;
+    text-align: center;
+    background: rgb(255,208,133)   */
   } 
-
   
-
-  .aboutDescription{
-    margin-top: 8%;
-    font-size: 1.5rem;
+  /* Will need pixel for the font size instead of percent */
+  .aboutHeading {
+  font-size: 1.8rem;
+  margin-top: 2%;
+  }
   
+   /* .aboutDescription {
+    text-align: center;
+    margin: auto
+    overflow-wrap: break-word;
+    font-weight: 1.5 rem;
+  
+  }    */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 882px and up) */
+@media only screen and (min-width: 882px) {
+  .container {
+    flex-direction: row;
+    margin: 0 4%;
   }
 
-.aboutBloom {
-  overflow-wrap: break-word;
-  text-align: center;
-  margin: auto;
-    /* background-color: var(--royal-purple);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  margin-bottom: 8%;
-  text-align: center;
-  background: rgb(255,208,133)   */
 
-} 
-.aboutHeading {
-font-size: 1.8rem;
-margin-top: 2%;
 }
 
- /* .aboutDescription {
-  text-align: center;
-  margin: auto
-  overflow-wrap: break-word;
-  font-weight: 1.5 rem;
 
-}    */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
+/* Extra large devices (large laptops and desktops, 1300px and up) */
+@media only screen and (min-width: 1400px) {}

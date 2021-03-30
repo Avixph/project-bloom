@@ -28,11 +28,11 @@ export default function AboutTeam(props) {
 
     <div className={props.dark? "TeamMember":"TeamMember-dark"}>
      
-      <img src={props.pic} alt="" className="image" />
-      <h2 className="TeamMemberName">
+      <img src={props.pic} alt="" className={props.dark ? "image" : "image-Dark"} />
+      <h2 className={props.dark ? "TeamMemberName" : "TeamMemberName-Dark"}>
         {props.name.first} {props.name.last}
       </h2>
-      <h3 className="TeamRole">{props.name.role}</h3>
+      <h3 className={props.dark ? "TeamRole" : "TeamRole-Dark"}>{props.name.role}</h3>
       <a
         href={props.links.github}
         target="_blank"
