@@ -131,6 +131,7 @@
   border: none;
   outline: none;
   cursor: pointer;
+  border-radius: 10px;
 }
 .button-light{
   display: inline-block;
