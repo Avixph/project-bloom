@@ -26,7 +26,7 @@
   .pageTitle{
     margin-top: 4.8rem;
     margin-left: 5%;
-    font-size: 3.8vw;
+    font-size: 6.6vw;
     text-align: center;
     color: var(--russian-violet);
     font-family: var(--title-font);
@@ -42,16 +42,16 @@
   } 
 
   .randomList:nth-child(2) button:nth-child(2){
-    font-size: 2.2vw;
+    font-size: 3.4vw;
     color: var(--deep-champagne);
     background-color: var(--russian-violet);
     border: none;
-    margin: 0 44%;
+    margin: 0 40%;
     outline: none;
     padding: 15px 0;
     border-radius: 10px;
     cursor: pointer;
-    width: 11%;
+    width: 20%;
   }
   
   .darkRandomList:nth-child(2) button:nth-child(2){
