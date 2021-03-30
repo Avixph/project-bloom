@@ -150,7 +150,7 @@
   }
 
   .jobBlurb{
-    width: 68%;
+    width: 51%;
     margin-bottom: 2%;
     background-color: var(--deep-champagne);
     padding: 2% 2%;
@@ -159,7 +159,7 @@
   }
 
   .darkJobBlurb{
-    width: 68%;
+    width: 51%;
     margin-bottom: 2%;
     background-color: var(--platinum);
     padding: 2% 2%;
@@ -277,11 +277,11 @@
 @media only screen and (min-width: 1400px) {
 
   .jobBlurb {
-    width: 40%;
+    width: 34%;
   }
 
   .darkJobBlurb {
-    width: 40%;
+    width: 34%;
   }
 
   .jobJobBlurb button{

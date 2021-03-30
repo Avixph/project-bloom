@@ -17,6 +17,89 @@
   --text-shadow: 2px 2px 3px rgba(rgba(0, 0, 0, 0.4)), -1px -1px 3px #fff;
 }
 
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .TeamMember { 
+    background-color: var(--royal-purple);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 8%;
+    text-align: center;
+    padding: 2%;
+    border-radius: 10px;
+  }  
+  
+  .TeamMember-dark { 
+    background-color: var(--russian-violet);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 8%;
+    text-align: center;
+    padding: 2%;
+    border-radius: 10px;
+  } 
+  .TeamMember:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .button-dark{
+    display: inline-block;
+    margin: 1%;
+    background-color: var(--african-violet);
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .button-light{
+    display: inline-block;
+    margin: 1%;
+    background-color: var(--deep-champagne) ;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .image {
+    width: 100%;
+    margin-bottom: auto 200%;
+    background-color: var(--russian-violet);
+    padding: 2% 2%;
+    border-radius: 20px; 
+  }
+  
+  .image-Dark {
+    width: 100%;
+    margin-bottom: auto 200%;
+    background-color: var(--deep-champagne);
+    padding: 2% 2%;
+    border-radius: 20px; 
+  }
+  
+   .TeamMemberName {
+     color:#ffd085 ;
+  } 
+  
+  .TeamMemberName-Dark {
+    color: var(--platinum);
+  } 
+  
+   .TeamRole {
+    color: #ffd085;
+  }   
+  
+  .TeamRole-Dark {
+    color: var(--platinum);
+  
+  }  
+  
+  /* .LinkedIn,  {
+    color: #f9f6f2;
+  } */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
  .TeamMember { 
   background-color: var(--royal-purple);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -24,6 +107,8 @@
   margin: auto;
   margin-bottom: 8%;
   text-align: center;
+  padding: 2%;
+  border-radius: 10px;
 }  
 
 .TeamMember-dark { 
@@ -33,15 +118,28 @@
   margin: auto;
   margin-bottom: 8%;
   text-align: center;
+  padding: 2%;
+  border-radius: 10px;
 } 
 .TeamMember:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .button-dark{
-  background-color: var(--african-violet)
+  display: inline-block;
+  margin: 1%;
+  background-color: var(--african-violet);
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 .button-light{
+  display: inline-block;
+  margin: 1%;
   background-color: var(--deep-champagne) ;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
 }
 .image {
   width: 100%;
@@ -49,16 +147,61 @@
   background-color: var(--russian-violet);
   padding: 2% 2%;
   border-radius: 20px; 
- 
 }
+
+.image-Dark {
+  width: 100%;
+  margin-bottom: auto 200%;
+  background-color: var(--deep-champagne);
+  padding: 2% 2%;
+  border-radius: 20px; 
+}
+
  .TeamMemberName {
    color:#ffd085 ;
 } 
+
+.TeamMemberName-Dark {
+  color: var(--platinum);
+} 
+
  .TeamRole {
   color: #ffd085;
-
 }   
+
+.TeamRole-Dark {
+  color: var(--platinum);
+
+}  
+
 /* .LinkedIn,  {
   color: #f9f6f2;
 } */
+}
 
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 882px and up) */
+@media only screen and (min-width: 882px) {
+
+  .TeamMember { 
+    width: 32%;
+    height: 30rem;
+  } 
+
+  .TeamMember-dark { 
+    width: 32%;
+    height: 30rem;
+  } 
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
+/* Extra large devices (large laptops and desktops, 1300px and up) */
+@media only screen and (min-width: 1400px) {}

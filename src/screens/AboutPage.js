@@ -3,6 +3,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AboutTeam from "../components/AboutTeam";
 import { teamBloom } from "../services/team.json";
+import FullHeight from "react-full-height";
+
 
 export default function AboutPage({ lightSwitch, dark }) {
   console.log(lightSwitch)
@@ -13,8 +15,10 @@ export default function AboutPage({ lightSwitch, dark }) {
   };
   //font color, button color, card color, background color?
   return (
+    
     <div className="about"> 
       <Header handleLights={lightSwitch} dark={dark} />
+      <FullHeight>
       <div className= "aboutBloom" >
       {/* "aboutBloom"*/}
         <h1 className="aboutHeading">About</h1>{" "}
@@ -26,7 +30,8 @@ export default function AboutPage({ lightSwitch, dark }) {
         </p>{" "}
         
       </div>
-      <div className="container">{renderTeam()}</div> 
+        <div className="container">{renderTeam()}</div>
+        </FullHeight>  
       <Footer dark={dark} />
     </div>
   );
