@@ -31,19 +31,19 @@
   }
 
   .jobBlurb{
-    width: 68%;
-    margin-bottom: 2%;
+    width: 81%;
+    margin-bottom: 7%;
     background-color: var(--deep-champagne);
-    padding: 2% 2%;
+    padding: 6% 2%;
     border-radius: 20px;
     box-shadow: var(--platinum);
   }
 
   .darkJobBlurb{
-    width: 68%;
-    margin-bottom: 2%;
+    width: 81%;
+    margin-bottom: 7%;
     background-color: var(--platinum);
-    padding: 2% 2%;
+    padding: 6% 2%;
     border-radius: 20px;
     /* box-shadow: var(--lm-header-shadow); */
   }
@@ -132,7 +132,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     font-family: var(--title-font);
-    font-size: 4.2vw;
+    font-size: 8.2vw;
   }  
 
 }
@@ -247,6 +247,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     font-family: var(--title-font);
+    font-size: 3.2vw;
   }  
 
 
