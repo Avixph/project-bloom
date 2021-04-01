@@ -111,6 +111,14 @@
     width: 15%;
   }
   
+  .searchMessage {
+    color: var(--rich-black-fogar-39);
+  }
+
+  .searchMessageDark {
+    color: var(--platinum);
+  } 
+
   .jobItems {
     display: flex;
     justify-content: space-around;
@@ -225,6 +233,14 @@
   .darkButton button {
     width: 15%;
   }
+
+  .searchMessage {
+    color: var(--rich-black-fogar-39);
+  }
+
+  .searchMessageDark {
+    color: var(--platinum);
+  } 
   
   .jobItems {
     display: flex;

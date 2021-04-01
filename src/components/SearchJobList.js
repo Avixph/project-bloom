@@ -27,7 +27,7 @@ export default function SearchJobList({ dark }) {
       }
       return <img src={dark ? loadingSpinner : darkLoadingSpinner} alt="" />;
     } else if (jobsRequest[0] === "Fill in search field") {
-      return <h2>Complete search field.</h2>;
+      return <h2 className={dark ? "searchMessage" : "searchMessageDark"}>Complete search field.</h2>;
     } else if (status === "success") {
       return jobsRequest.slice(0, nextJobPosts).map((jobinfo, index) => {
         return <JobPost {...jobinfo} key={index} dark={dark} />;

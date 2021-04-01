@@ -125,10 +125,10 @@
     border: 2px solid var(--deep-champagne);
     outline: none;
     line-height: 2; 
-    padding: 0 7%;
+    padding: 1% 7%;
     font-size: 3.2vw;
     text-align: center;
-    width: 52%;
+    width: 80%;
   }
   
   .darkSearchField input {
@@ -136,10 +136,10 @@
     border: 2px solid var(--platinum);
     outline: none;
     line-height: 2; 
-    padding: 0 7%;
+    padding: 1% 7%;
     font-size: 3.2vw;
     text-align: center;
-    width: 52%;
+    width: 80%;
   }
 
   .searchDivider {
@@ -392,10 +392,10 @@
     border: 2px solid var(--deep-champagne);
     outline: none;
     line-height: 2; 
-    padding: 0 7%;
+    padding: 0.8% 7%;
     font-size: 1.2rem;
     text-align: center;
-    width: 52%;
+    width: 80%;
   }
   
   .darkSearchField input {
@@ -403,10 +403,10 @@
     border: 2px solid var(--platinum);
     outline: none;
     line-height: 2; 
-    padding: 0 7%;
+    padding: 0.8% 7%;
     font-size: 1.2rem;
     text-align: center;
-    width: 52%;
+    width: 80%;
   }
 
   .searchDivider {
@@ -619,8 +619,8 @@
   }
 
   main div:first-child div:nth-child(2) input {
-    font-size: 1.5rem;
-    line-height: 3.2;
+    font-size: 3rem;
+    line-height: 2.2;
   }
 
   .searchField button {
