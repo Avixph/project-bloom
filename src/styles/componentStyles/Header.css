@@ -619,8 +619,8 @@
   }
 
   main div:first-child div:nth-child(2) input {
-    font-size: 1.5rem;
-    line-height: 3.2;
+    font-size: 3rem;
+    line-height: 2.2;
   }
 
   .searchField button {
