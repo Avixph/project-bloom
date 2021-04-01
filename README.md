@@ -41,7 +41,7 @@ The goal of the web/mobile application is to streamline the job hunting process 
 
 ## <div align="left" style='color: #240046'> 🏆 MVP 🏆</div>
 > - Search Bar
-> - Locations near me
+> - Random Selection of Jobs
 > - Light/Dark Mode
 
 ## <div align="left" style='color: #240046'> 🔮 Post-MVP 🔮 </div>
