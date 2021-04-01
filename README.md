@@ -5,7 +5,7 @@
 ## <div align="left" style='color: #240046'> 🔎 Description 🔍
 
 <p>The economic toll of the COVID-19 pandemic is expected to leave more than 140 million people out of work and another 1.6 billion at risk of income loss -- with low-income workers, women and underrepresented communities the hardest hit.</p>
-<p>Our job searching application will be an easy platform for tech professionals that have been laid off or looking for new growth opportunities in other companies to search for roles according to specific technologies and roles within tech. The goal is to make the job searching process more streamlined and time efficient for tech workers. We will help decrease the amount of time it takes to find relevant roles for the technologies or skills one is proficient in so that they don’t have to sift through roles that don't apply to them. Other features include: two search bars and 5 roles in the vicinity of the job seeker.
+<p>The goal of the web/mobile application is to streamline the job hunting process for remote workers. We will help decrease the amount of time it takes to find remote roles using our remote job API with positions located all over the world. With our app,  job seekers can search roles, apply to and work from anywhere in the world.
 </p>
 
 ## <div align="left" style='color: #240046'> 🛠 Wireframing 🛠 </div>
