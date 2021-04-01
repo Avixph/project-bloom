@@ -44,8 +44,9 @@
   
     .aboutDescription {
       font-family: var(--body-font);
-      font-size: 3rem;
-      font-size: 1.5rem;
+      margin-left: 2%;
+      margin-right: 2%;
+      font-size: 4vw;
     }
   
   .aboutBloom {
@@ -62,8 +63,8 @@
   } 
   
   .aboutHeading {
-  font-size: 1.8rem;
-  margin-top: 2%;
+    font-size: 6.6vw;
+    margin-top: 8rem;
   }
   
    /* .aboutDescription {
@@ -101,7 +102,7 @@
   
     .aboutDescription {
       font-family: var(--body-font);
-      margin-top: 8%;
+      /* margin-top: 8%; */
       font-size: 1.5rem;
     }
   
@@ -120,8 +121,8 @@
   
   /* Will need pixel for the font size instead of percent */
   .aboutHeading {
-  font-size: 1.8rem;
-  margin-top: 2%;
+    font-size: 3rem;
+    margin-top: 8rem;
   }
   
    /* .aboutDescription {
@@ -134,10 +135,20 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+  .aboutHeading {
+    font-size: 3.5rem;
+    margin-top: 8rem;
+  }
+}
 
 /* Large devices (laptops/desktops, 882px and up) */
 @media only screen and (min-width: 882px) {
+  .aboutHeading {
+    font-size: 4rem;
+    margin-top: 8rem;
+  }
+
   .container {
     flex-direction: row;
     margin: 0 4%;
@@ -148,7 +159,13 @@
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+  .aboutHeading {
+    font-size: 5rem;
+    margin-top: 8%;
+    margin-bottom: 2.5%;
+  }
+}
 
 
 /* Extra large devices (large laptops and desktops, 1300px and up) */
