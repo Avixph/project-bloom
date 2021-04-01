@@ -160,7 +160,7 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .aboutHeading {
-    font-size: 5rem;
+    font-size: 4.5rem;
     margin-top: 8%;
     margin-bottom: 2.5%;
   }
