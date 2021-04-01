@@ -40,7 +40,7 @@
 
 ## <div align="left" style='color: #240046'> 🏆 MVP 🏆</div>
 > - Search Bar
-> - Locations near me
+> - Clean, Accessibile UI Design
 > - Light/Dark Mode
 
 ## <div align="left" style='color: #240046'> 🔮 Post-MVP 🔮 </div>
