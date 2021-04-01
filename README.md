@@ -13,7 +13,7 @@ The goal of the web/mobile application is to streamline the job hunting process 
 [App Concepts](https://www.figma.com/file/ag4FxZ6ylZVhcD11s4rNpN/Project-Bloom?node-id=17%3A202)
 | Logo                                                         |                                                              |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![bloom Icon](src/images/logos/project-bloom-logo-small.svg) | ![bloom Logo](src/images/logos/project-bloom-logo-light.svg) |
+| ![bloom Icon](src/images/logos/project-bloom-icon.svg) | ![bloom Logo](src/images/logos/project-bloom-logo-light.svg) |
 | icon                                                         | logo                                                         |
 
 | Fonts                                                              |
