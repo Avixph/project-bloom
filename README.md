@@ -6,7 +6,7 @@
 
 <p>The economic toll of the COVID-19 pandemic is expected to leave more than 140 million people out of work and another 1.6 billion at risk of income loss -- with low-income workers, women and underrepresented communities the hardest hit.</p>
 <p>
-The goal of the web/mobile application is to streamline the job hunting process for remote workers. We will help decrease the amount of time it takes to find remote roles using our remote job API with positions located all over the world. With our app,  job seekers can find roles they can apply to and work from anywhere in the world.
+The goal of the application is to streamline the job hunting process for remote workers. We will help decrease the amount of time it takes to find remote roles using our remote job API with positions located all over the world. With our app,  job seekers can find roles they can apply to and work from anywhere in the world.
 </p>
 
 ## <div align="left" style='color: #240046'> 🛠 Wireframing 🛠 </div>
